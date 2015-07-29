@@ -13,7 +13,7 @@ Compared to the Particle Photon, the Electron introduces additional hardware fea
 5. Access to USB data lines. 
 6. 12 additional GPIO Pins.
 7. 4 additional ADC channels.
-8. 6 additional Timer channels.
+8. 6 Timer channels exposed.
 9. 2 additional UART peripherals.
 10. 1 additional SPI and CAN peripheral.
 
