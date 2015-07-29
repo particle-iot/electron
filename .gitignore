@@ -1,0 +1,5 @@
+# Ignore Eagle Backup Files
+*.s#*
+*.b#*
+*.l#*
+
