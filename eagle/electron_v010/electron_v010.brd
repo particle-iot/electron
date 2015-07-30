@@ -1637,6 +1637,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X01">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1858,7 +1879,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </element>
 <element name="C16" library="Spark" package="C0402_B" value="15pF" x="3.302" y="3.429" locked="yes"/>
 <element name="R10" library="Spark" package="R0402_B" value="1K" x="13.97" y="36.449" locked="yes" rot="R270"/>
-<element name="U$2" library="Spark" package="SPARK_LOGO2" value="SPARK_LOGO2" x="17.8562" y="48.26" locked="yes"/>
+<element name="U$2" library="Spark" package="SPARK_LOGO2" value="SPARK_LOGO2" x="15.8242" y="0.127" locked="yes"/>
 <element name="R8" library="Spark" package="R0402_B" value="10K" x="12.192" y="36.449" locked="yes" rot="R270"/>
 <element name="R9" library="Spark" package="R0402_B" value="1K" x="9.525" y="31.623" locked="yes" rot="R180"/>
 <element name="R11" library="Spark" package="R0402_B" value="1K" x="9.525" y="35.941" locked="yes" rot="R180"/>
@@ -1939,6 +1960,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="R21" library="Spark" package="R0402_B" value="4K7" x="16.637" y="44.323" locked="yes"/>
 <element name="U$7" library="Particle" package="M02_0.05_HEADER" value="M02_0.05_HEADER" x="14.605" y="44.958" locked="yes"/>
 <element name="C39" library="Spark" package="C0402_B" value="1uF" x="12.954" y="40.259" locked="yes" rot="R90"/>
+<element name="JP3" library="pinhead" package="1X01" value="" x="19.05" y="49.53" locked="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="USB_DM">
@@ -2131,8 +2153,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="JP2" pad="2"/>
 <via x="15.748" y="15.367" extent="1-16" drill="0.3"/>
 <wire x1="12.192" y1="36.9316" x2="12.192" y2="36.8554" width="0.2032" layer="1"/>
-<wire x1="19.05" y1="44.45" x2="17.399" y2="42.799" width="0.2032" layer="1"/>
-<wire x1="17.399" y1="42.799" x2="17.399" y2="38.354" width="0.2032" layer="1"/>
+<wire x1="17.399" y1="41.91" x2="17.399" y2="38.354" width="0.2032" layer="1"/>
 <wire x1="17.399" y1="38.354" x2="16.51" y2="37.465" width="0.2032" layer="1"/>
 <wire x1="13.462" y1="37.465" x2="16.51" y2="37.465" width="0.2032" layer="1"/>
 <wire x1="12.7" y1="38.608" x2="13.081" y2="38.227" width="0.2032" layer="1"/>
@@ -2160,8 +2181,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="16.891" y1="21.717" x2="16.51" y2="22.098" width="0.2032" layer="2"/>
 <wire x1="16.51" y1="22.098" x2="16.51" y2="31.115" width="0.2032" layer="2"/>
 <wire x1="16.51" y1="31.115" x2="17.399" y2="32.004" width="0.2032" layer="2"/>
-<wire x1="17.399" y1="32.004" x2="17.399" y2="42.799" width="0.2032" layer="2"/>
-<wire x1="17.399" y1="42.799" x2="19.05" y2="44.45" width="0.2032" layer="2"/>
+<wire x1="17.399" y1="32.004" x2="17.399" y2="41.91" width="0.2032" layer="2"/>
 <wire x1="15.24" y1="15.875" x2="15.748" y2="15.367" width="0.2032" layer="16"/>
 <wire x1="16.48" y1="34.557" x2="14.4904" y2="34.557" width="0.2032" layer="1"/>
 <wire x1="14.4904" y1="34.557" x2="13.589" y2="35.4584" width="0.2032" layer="1"/>
@@ -2172,6 +2192,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="12.192" y1="37.338" x2="12.192" y2="36.9316" width="0.2032" layer="1"/>
 <wire x1="12.2174" y1="38.608" x2="12.7" y2="38.608" width="0.2032" layer="1"/>
 <wire x1="13.081" y1="37.846" x2="13.462" y2="37.465" width="0.2032" layer="1"/>
+<wire x1="17.399" y1="41.91" x2="19.05" y2="43.561" width="0.2032" layer="1"/>
+<wire x1="19.05" y1="43.561" x2="19.05" y2="44.45" width="0.2032" layer="1"/>
+<wire x1="17.399" y1="41.91" x2="19.05" y2="43.561" width="0.2032" layer="2"/>
+<wire x1="19.05" y1="43.561" x2="19.05" y2="44.45" width="0.2032" layer="2"/>
 </signal>
 <signal name="USB_DP">
 <contactref element="R5" pad="2"/>
@@ -2708,6 +2732,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="0" y="2.54"/>
 </polygon>
 <via x="2.54" y="41.402" extent="1-16" drill="0.3"/>
+<via x="18.0848" y="43.4594" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="N$8">
 </signal>
@@ -4029,6 +4054,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="15.748" y="46.228"/>
 <vertex x="14.478" y="46.228"/>
 </polygon>
+<contactref element="JP3" pad="1"/>
+<wire x1="17.018" y1="45.974" x2="17.1704" y2="46.1264" width="0.6096" layer="1"/>
+<wire x1="17.1704" y1="46.1264" x2="17.1704" y2="47.1932" width="0.6096" layer="1"/>
+<wire x1="17.1704" y1="47.1932" x2="19.05" y2="49.0728" width="0.6096" layer="1"/>
+<wire x1="19.05" y1="49.0728" x2="19.05" y2="49.53" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="RED_LED_0603" pad="C"/>
@@ -4602,8 +4632,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="5,1,33b7cdf533e69d52"/>
 <approved hash="4,1,57311d9ae385abc6"/>
 <approved hash="5,1,7e7919b5b26662db"/>
-<approved hash="5,1,c25a40e98d40da8d"/>
 <approved hash="5,1,ef7b8ab5926e22de"/>
+<approved hash="5,1,c25a40e98d40da8d"/>
 <approved hash="5,1,b354f3e58d40a683"/>
 <approved hash="5,1,cd766cb5ee6662d3"/>
 <approved hash="4,1,b835f6760a6946c2"/>
