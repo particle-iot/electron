@@ -38,7 +38,7 @@ A detailed description of the pin mapping can be found in **electron-pinmap_v1**
 Please review the pinmap spreadsheet to better understand the alternate functions of the GPIO pins.
 
 ### Eagle (schematic, pcb layout and drc):
-**eagle** contains the history of Electron designs and **cell_v009** is the latest design folder.
+**eagle** contains the history of Electron designs and **cell_v010** is the latest design folder.
 
 #License
 
