@@ -203,8 +203,8 @@ Layer stack up:
 <wire x1="26.6192" y1="50.8254" x2="59.3852" y2="50.8254" width="0.127" layer="51"/>
 <wire x1="59.3852" y1="50.8254" x2="59.3852" y2="38.1254" width="0.127" layer="51"/>
 <wire x1="59.3852" y1="38.1254" x2="26.6192" y2="38.1254" width="0.127" layer="51"/>
-<text x="3.937" y="30.988" size="0.8128" layer="21" font="vector" ratio="12">SETUP</text>
-<text x="12.827" y="30.988" size="0.8128" layer="21" font="vector" ratio="12">RESET</text>
+<text x="4.191" y="30.988" size="0.6096" layer="21" font="vector" ratio="12">SETUP</text>
+<text x="13.462" y="30.988" size="0.6096" layer="21" font="vector" ratio="12">RESET</text>
 <text x="0.1778" y="50.4952" size="0.8128" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">010</text>
 <text x="27.94" y="11.43" size="1.016" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. PARTICLE INDUSTRIES, INC 
 ("PARTICLE") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
@@ -244,11 +244,11 @@ Particle is a registered trademark.</text>
 <text x="0.5334" y="48.641" size="0.6096" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">VIN</text>
 <text x="13.6652" y="44.2976" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">D+</text>
 <text x="14.9352" y="44.2976" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">D-</text>
-<wire x1="2.3368" y1="30.099" x2="17.9832" y2="30.099" width="0.0762" layer="21"/>
-<wire x1="17.9832" y1="30.099" x2="17.9832" y2="4.445" width="0.0762" layer="21"/>
-<wire x1="17.9832" y1="4.445" x2="2.3368" y2="4.445" width="0.0762" layer="21"/>
-<wire x1="2.3368" y1="4.445" x2="2.3368" y2="30.099" width="0.0762" layer="21"/>
-<circle x="17.1577" y="5.2705" radius="0.4490125" width="0.0762" layer="21"/>
+<wire x1="2.2098" y1="30.226" x2="18.1102" y2="30.226" width="0.254" layer="21"/>
+<wire x1="18.1102" y1="30.226" x2="18.1102" y2="4.318" width="0.254" layer="21"/>
+<wire x1="18.1102" y1="4.318" x2="2.2098" y2="4.318" width="0.254" layer="21"/>
+<wire x1="2.2098" y1="4.318" x2="2.2098" y2="30.226" width="0.254" layer="21"/>
+<circle x="17.1577" y="5.2705" radius="0.4490125" width="0.127" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
