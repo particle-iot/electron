@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="$GND" color="15" fill="1" visible="yes" active="yes"/>
@@ -4182,6 +4182,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="11.41" y1="41.967" x2="11.754" y2="41.967" width="0.254" layer="16"/>
 <wire x1="11.754" y1="41.967" x2="12.319" y2="41.402" width="0.254" layer="16"/>
 <wire x1="12.319" y1="41.402" x2="12.319" y2="40.7416" width="0.254" layer="16"/>
+</signal>
+<signal name="N$10">
+<polygon width="0" layer="1" pour="cutout">
+<vertex x="5.969" y="2.413"/>
+<vertex x="7.747" y="2.413"/>
+<vertex x="7.747" y="0.508"/>
+<vertex x="5.969" y="0.508"/>
+</polygon>
 </signal>
 </signals>
 <errors>
