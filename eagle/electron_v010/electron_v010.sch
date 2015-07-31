@@ -9122,23 +9122,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pad name="PAD@8" x="0" y="-0.9" drill="0.3" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="PAD@9" x="0.9" y="-0.9" drill="0.3" diameter="0.4064" stop="no" thermals="no"/>
 </package>
-<package name="4020TYPE">
-<description>4020 Type Inductor
-Bourns: SRP4012 SRP4020
-TDK: SPM4012 SPM4020</description>
-<smd name="P$1" x="-1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
-<smd name="P$2" x="1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
-<wire x1="-2.1" y1="-2.1" x2="2.1" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="2.1" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="2.1" x2="2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="-2.1" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="49"/>
-<wire x1="2.1" y1="2.1" x2="2.1" y2="-2.1" width="0.127" layer="49"/>
-<wire x1="2.1" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="49"/>
-<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="2.1" width="0.127" layer="49"/>
-</package>
 </packages>
 <symbols>
 <symbol name="BQ24298">
@@ -9173,16 +9156,6 @@ TDK: SPM4012 SPM4020</description>
 <wire x1="12.7" y1="-27.94" x2="-12.7" y2="-27.94" width="0.254" layer="94"/>
 <text x="-12.7" y="30.48" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-33.02" size="1.778" layer="97">&gt;VALUE</text>
-</symbol>
-<symbol name="INDUCTOR">
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<pin name="1" x="-7.62" y="0" visible="off" length="short"/>
-<pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
-<text x="-5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9220,23 +9193,6 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <connect gate="G$1" pin="TS" pad="11"/>
 <connect gate="G$1" pin="VBUS@1" pad="1"/>
 <connect gate="G$1" pin="VBUS@24" pad="24"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="INDUCTOR">
-<description>Compatible with 4012 and 4020 package style from TDK</description>
-<gates>
-<gate name="L$1" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="4020" package="4020TYPE">
-<connects>
-<connect gate="L$1" pin="1" pad="P$1"/>
-<connect gate="L$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10981,6 +10937,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="53" x="19.05" y="0.635" dx="1.4732" dy="1.27" layer="16"/>
 <smd name="54" x="21.59" y="0.635" dx="1.4732" dy="1.27" layer="16"/>
 </package>
+<package name="4020TYPE">
+<description>4020 Type Inductor
+Bourns: SRP4012 SRP4020
+TDK: SPM4012 SPM4020</description>
+<wire x1="-2.1" y1="-2.1" x2="2.1" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="2.1" x2="2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-2.1" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="49"/>
+<wire x1="2.1" y1="2.1" x2="2.1" y2="-2.1" width="0.127" layer="49"/>
+<wire x1="2.1" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="49"/>
+<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="2.1" width="0.127" layer="49"/>
+<smd name="P$1" x="-1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
+<smd name="P$2" x="1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
+</package>
+<package name="INDUCTOR-4020">
+<smd name="P$1" x="-1.55" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="1.55" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+<wire x1="-0.3302" y1="1.9352" x2="0.3302" y2="1.9352" width="0.127" layer="21"/>
+<wire x1="-0.3302" y1="-1.9352" x2="0.3302" y2="-1.9352" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M02_0.05_HEADER">
@@ -11172,6 +11151,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="4020TYPE">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="H" package="INDUCTOR-4020">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11446,7 +11443,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="Spark" deviceset="DIODE" device=""/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
-<part name="U$4" library="electron" deviceset="INDUCTOR" device="4020" value="2.2uH"/>
+<part name="U$4" library="Particle" deviceset="INDUCTOR" device="H" value="2.2uH"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device="" value="+3V8"/>
 <part name="RED_LED_0603" library="SparkFun" deviceset="LED" device="0603"/>
@@ -11594,7 +11591,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND36" gate="1" x="97.79" y="161.29" rot="R270"/>
 <instance part="U$3" gate="G$1" x="113.03" y="167.64"/>
 <instance part="GND47" gate="1" x="193.04" y="105.41"/>
-<instance part="U$4" gate="L$1" x="203.2" y="154.94" smashed="yes">
+<instance part="U$4" gate="G$1" x="203.2" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="198.12" y="157.48" size="1.27" layer="95"/>
 <attribute name="VALUE" x="203.2" y="157.48" size="1.27" layer="96"/>
 </instance>
@@ -12249,7 +12246,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="227.33" y="154.94"/>
 <label x="232.41" y="154.94" size="1.778" layer="95"/>
 <label x="184.15" y="147.32" size="1.778" layer="95"/>
-<pinref part="U$4" gate="L$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
 <pinref part="C23" gate="G$1" pin="1"/>
 <pinref part="C24" gate="G$1" pin="1"/>
 </segment>
@@ -12274,7 +12271,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="194.31" y1="161.29" x2="194.31" y2="154.94" width="0.1524" layer="91"/>
 <junction x="194.31" y="154.94"/>
 <label x="184.15" y="154.94" size="1.778" layer="95"/>
-<pinref part="U$4" gate="L$1" pin="1"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 </net>

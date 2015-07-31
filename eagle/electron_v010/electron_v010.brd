@@ -1354,23 +1354,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="PAD@8" x="0" y="-0.9" drill="0.3" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="PAD@9" x="0.9" y="-0.9" drill="0.3" diameter="0.4064" stop="no" thermals="no"/>
 </package>
-<package name="4020TYPE">
-<description>4020 Type Inductor
-Bourns: SRP4012 SRP4020
-TDK: SPM4012 SPM4020</description>
-<smd name="P$1" x="-1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
-<smd name="P$2" x="1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
-<wire x1="-2.1" y1="-2.1" x2="2.1" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="2.1" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="2.1" x2="2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="-2.1" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="49"/>
-<wire x1="2.1" y1="2.1" x2="2.1" y2="-2.1" width="0.127" layer="49"/>
-<wire x1="2.1" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="49"/>
-<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="2.1" width="0.127" layer="49"/>
-</package>
 </packages>
 </library>
 <library name="SparkFun-Connectors">
@@ -1658,6 +1641,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="18" x="21.59" y="0" drill="0.889" diameter="1.4732" shape="offset" rot="R90"/>
 <text x="-22.9362" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-22.86" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="INDUCTOR-4020">
+<smd name="P$1" x="-1.55" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="1.55" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+<wire x1="-0.3302" y1="1.9352" x2="0.3302" y2="1.9352" width="0.127" layer="21"/>
+<wire x1="-0.3302" y1="-1.9352" x2="0.3302" y2="-1.9352" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1950,7 +1939,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="U$1" library="electron" package="QFN24" value="BQ24298 / BQ24195L" x="10.16" y="43.942" locked="yes" rot="MR0"/>
 <element name="JP4" library="SparkFun-Connectors" package="JST-2-SMD-VERT" value="" x="6.604" y="47.625" locked="yes"/>
 <element name="U$3" library="Spark" package="DIODE-DO-220AA(SMP)" value="DIODE" x="14.986" y="48.9204" locked="yes" rot="MR270"/>
-<element name="U$4" library="electron" package="4020TYPE" value="2.2uH" x="5.08" y="47.625" locked="yes" rot="MR270"/>
+<element name="U$4" library="Particle" package="INDUCTOR-4020" value="2.2uH" x="5.08" y="47.625" locked="yes" rot="MR270"/>
 <element name="RED_LED_0603" library="SparkFun" package="LED-0603" value="" x="8.89" y="40.767" locked="yes"/>
 <element name="R2" library="Spark" package="R0402_B" value="333R" x="9.652" y="40.259" locked="yes" rot="MR270"/>
 <element name="R4" library="Spark" package="R0402_B" value="2.2K" x="9.906" y="40.259" locked="yes" rot="R90"/>
@@ -2803,35 +2792,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <via x="3.3528" y="40.1574" extent="1-16" drill="0.3"/>
 <via x="3.3528" y="39.497" extent="1-16" drill="0.3"/>
 <via x="9.398" y="38.227" extent="1-16" drill="0.3"/>
-<via x="3.429" y="45.847" extent="1-16" drill="0.3"/>
-<via x="3.429" y="45.085" extent="1-16" drill="0.3"/>
+<via x="3.937" y="45.9232" extent="1-16" drill="0.3"/>
+<via x="3.937" y="45.3644" extent="1-16" drill="0.3"/>
 <via x="3.175" y="5.08" extent="1-16" drill="0.3"/>
 <wire x1="3.937" y1="5.842" x2="3.175" y2="5.08" width="1.778" layer="2"/>
 <wire x1="3.175" y1="5.08" x2="3.175" y2="4.318" width="1.778" layer="2"/>
-<wire x1="3.429" y1="45.085" x2="3.429" y2="45.847" width="1.778" layer="2"/>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="2.794" y="8.382"/>
 <vertex x="5.588" y="8.382"/>
 <vertex x="5.588" y="5.588"/>
 <vertex x="3.937" y="3.937"/>
 <vertex x="2.794" y="3.937"/>
-</polygon>
-<polygon width="0.1524" layer="16" thermals="no">
-<vertex x="3.048" y="46.228"/>
-<vertex x="3.683" y="46.863"/>
-<vertex x="6.223" y="46.863"/>
-<vertex x="7.493" y="45.593"/>
-<vertex x="7.493" y="44.196"/>
-<vertex x="8.5344" y="44.196"/>
-<vertex x="8.5344" y="43.688"/>
-<vertex x="7.493" y="43.688"/>
-<vertex x="6.223" y="42.418"/>
-<vertex x="5.461" y="42.418"/>
-<vertex x="5.461" y="45.339"/>
-<vertex x="4.191" y="45.339"/>
-<vertex x="3.683" y="44.831"/>
-<vertex x="3.302" y="44.831"/>
-<vertex x="3.048" y="45.085"/>
 </polygon>
 <wire x1="9.271" y1="38.227" x2="8.636" y2="38.862" width="0.3048" layer="15"/>
 <wire x1="8.636" y1="38.862" x2="8.636" y2="39.243" width="0.3048" layer="15"/>
@@ -2843,8 +2814,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <via x="3.429" y="41.783" extent="1-16" drill="0.3"/>
 <wire x1="3.937" y1="31.877" x2="3.937" y2="39.497" width="1.778" layer="2"/>
 <wire x1="3.937" y1="39.497" x2="3.937" y2="41.783" width="1.778" layer="2"/>
-<wire x1="3.937" y1="41.783" x2="3.937" y2="44.577" width="1.778" layer="2"/>
-<wire x1="3.429" y1="45.085" x2="3.937" y2="44.577" width="1.778" layer="2"/>
+<wire x1="3.937" y1="41.783" x2="3.937" y2="45.3644" width="1.778" layer="2"/>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="2.413" y="8.89"/>
 <vertex x="3.937" y="8.89"/>
@@ -2876,6 +2846,28 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="6.473" y1="41.152" x2="5.842" y2="41.783" width="0.3302" layer="1"/>
 <wire x1="5.842" y1="41.783" x2="3.429" y2="41.783" width="0.3302" layer="1"/>
 <wire x1="3.429" y1="41.783" x2="3.937" y2="41.783" width="0.508" layer="2"/>
+<via x="3.5306" y="45.6438" extent="1-16" drill="0.3"/>
+<via x="4.3434" y="45.6438" extent="1-16" drill="0.3"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="8.5344" y="43.942"/>
+<vertex x="8.5344" y="43.688"/>
+<vertex x="8.255" y="43.688"/>
+<vertex x="7.493" y="43.688"/>
+<vertex x="6.2484" y="42.4434"/>
+<vertex x="5.4356" y="42.4434"/>
+<vertex x="5.4356" y="43.815"/>
+<vertex x="5.4356" y="44.831"/>
+<vertex x="5.1308" y="45.1358"/>
+<vertex x="3.0988" y="45.1358"/>
+<vertex x="2.921" y="45.3136"/>
+<vertex x="2.921" y="46.8122"/>
+<vertex x="3.1242" y="47.0154"/>
+<vertex x="7.0358" y="47.0154"/>
+<vertex x="7.112" y="46.9392"/>
+<vertex x="7.112" y="44.6024"/>
+<vertex x="7.493" y="44.2214"/>
+<vertex x="8.5344" y="44.2214"/>
+</polygon>
 </signal>
 <signal name="SIM_VCC">
 <contactref element="U1" pad="41"/>
@@ -3920,21 +3912,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="U$1" pad="20"/>
 <contactref element="U$4" pad="P$1"/>
 <contactref element="C7" pad="2"/>
-<polygon width="0.1524" layer="16" thermals="no">
-<vertex x="9.525" y="45.466"/>
-<vertex x="8.509" y="45.466"/>
-<vertex x="6.604" y="47.371"/>
-<vertex x="5.588" y="48.387"/>
-<vertex x="4.191" y="48.387"/>
-<vertex x="3.429" y="48.387"/>
-<vertex x="3.048" y="48.768"/>
-<vertex x="3.048" y="49.657"/>
-<vertex x="3.429" y="50.038"/>
-<vertex x="6.858" y="50.038"/>
-<vertex x="8.001" y="48.895"/>
-<vertex x="8.001" y="47.117"/>
-<vertex x="8.763" y="46.355"/>
-<vertex x="9.525" y="46.355"/>
+<polygon width="0.1524" layer="16" thermals="no" rank="2">
+<vertex x="9.144" y="45.5676"/>
+<vertex x="7.5692" y="45.5676"/>
+<vertex x="7.4422" y="45.6946"/>
+<vertex x="7.4422" y="47.0408"/>
+<vertex x="7.1628" y="47.3202"/>
+<vertex x="6.2484" y="48.2346"/>
+<vertex x="4.572" y="48.2346"/>
+<vertex x="3.1242" y="48.2346"/>
+<vertex x="2.921" y="48.4378"/>
+<vertex x="2.921" y="49.911"/>
+<vertex x="3.1242" y="50.1142"/>
+<vertex x="7.1882" y="50.1142"/>
+<vertex x="8.001" y="49.3014"/>
+<vertex x="8.001" y="46.6852"/>
+<vertex x="8.4074" y="46.2788"/>
+<vertex x="9.4234" y="46.2788"/>
+<vertex x="9.4234" y="45.5676"/>
 </polygon>
 </signal>
 <signal name="!CE">
@@ -4011,8 +4006,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="9.91" y1="45.917" x2="9.91" y2="46.351" width="0.254" layer="16"/>
 <wire x1="9.91" y1="46.351" x2="9.6012" y2="46.6598" width="0.254" layer="16"/>
 <wire x1="9.6012" y1="46.6598" x2="8.3312" y2="46.6598" width="0.254" layer="16"/>
-<wire x1="8.3312" y1="46.6598" x2="7.747" y2="47.244" width="0.254" layer="16"/>
-<wire x1="7.747" y1="47.244" x2="7.747" y2="48.0314" width="0.254" layer="16"/>
+<wire x1="8.3312" y1="46.6598" x2="8" y2="46.991" width="0.254" layer="16"/>
+<wire x1="8" y1="46.991" x2="8" y2="47.7784" width="0.254" layer="16"/>
+<wire x1="8" y1="47.7784" x2="7.747" y2="48.0314" width="0.254" layer="16"/>
 </signal>
 <signal name="BAT" class="3">
 <contactref element="U$1" pad="14"/>
@@ -4627,27 +4623,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="5,16,99c0541764c2657a"/>
 <approved hash="5,16,ad80ad2fa35aad9d"/>
 <approved hash="5,16,4921f12cd2a49eac"/>
-<approved hash="4,1,166e1e011e01166e"/>
-<approved hash="4,1,0ad5129a129a0ad5"/>
-<approved hash="4,1,c0bfc930c930c0bf"/>
-<approved hash="4,1,3ebc073307333ebc"/>
-<approved hash="4,1,f526fd49fd49f526"/>
-<approved hash="4,1,ccd8d497d497ccd8"/>
-<approved hash="4,1,278a2fe52fe5278a"/>
 <approved hash="4,1,d871207e207ed871"/>
-<approved hash="4,1,65876de86de86587"/>
-<approved hash="4,1,7120794f794f7120"/>
-<approved hash="4,1,83428b2d8b2d8342"/>
+<approved hash="4,1,166e1e011e01166e"/>
+<approved hash="4,1,278a2fe52fe5278a"/>
+<approved hash="4,1,3ebc073307333ebc"/>
+<approved hash="4,1,0ad5129a129a0ad5"/>
 <approved hash="4,1,33233b4c3b4c3323"/>
-<approved hash="4,1,b729bf46bf46b729"/>
+<approved hash="4,1,ccd8d497d497ccd8"/>
+<approved hash="4,1,83428b2d8b2d8342"/>
+<approved hash="4,1,c0bfc930c930c0bf"/>
 <approved hash="4,1,8edb969496948edb"/>
-<approved hash="4,1,9a74e27be27b9a74"/>
-<approved hash="4,1,7cb9453645367cb9"/>
 <approved hash="4,1,e98df1e2f1e2e98d"/>
+<approved hash="4,1,f526fd49fd49f526"/>
+<approved hash="4,1,9a74e27be27b9a74"/>
+<approved hash="4,1,65876de86de86587"/>
 <approved hash="4,1,48d2509d509d48d2"/>
+<approved hash="4,1,b729bf46bf46b729"/>
+<approved hash="4,1,7cb9453645367cb9"/>
+<approved hash="4,1,7120794f794f7120"/>
+<approved hash="5,1,23cd14376add5d99"/>
 <approved hash="5,1,869acdea7eb90577"/>
 <approved hash="5,1,a20498ece6b4d232"/>
-<approved hash="5,1,23cd14376add5d99"/>
 <approved hash="5,1,14e694908b1a379f"/>
 <approved hash="5,1,66d013f26df562b8"/>
 <approved hash="5,1,73ec0d0bfdc5d228"/>
@@ -4658,24 +4654,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="5,1,b354f3e58d40a683"/>
 <approved hash="5,1,cd766cb5ee6662d3"/>
 <approved hash="4,1,b835f6760a6946c2"/>
-<approved hash="4,1,521665e665e05210"/>
-<approved hash="4,1,7f4b38db38dd7f4d"/>
-<approved hash="4,1,1013a7e3a7e51015"/>
-<approved hash="4,1,fb41bcd1bcd7fb47"/>
-<approved hash="4,1,04ba530a530c04bc"/>
 <approved hash="4,1,4b200cb00cb64b26"/>
-<approved hash="4,1,21ef767f767921e9"/>
-<approved hash="4,1,08dd4ead4eab08db"/>
-<approved hash="4,1,3d447ad47ad23d42"/>
-<approved hash="4,1,efe8a878a87eefee"/>
-<approved hash="4,1,f6de80ae80a8f6d8"/>
-<approved hash="4,1,b4dbc2abc2adb4dd"/>
 <approved hash="4,1,46b91109110f46bf"/>
+<approved hash="4,1,7f4b38db38dd7f4d"/>
+<approved hash="4,1,521665e665e05210"/>
+<approved hash="4,1,c2b795079501c2b1"/>
+<approved hash="4,1,f6de80ae80a8f6d8"/>
 <approved hash="4,1,80b0d700d70680b6"/>
-<approved hash="4,1,b942fed2fed4b944"/>
+<approved hash="4,1,efe8a878a87eefee"/>
+<approved hash="4,1,b4dbc2abc2adb4dd"/>
 <approved hash="4,1,ade5ea75ea73ade3"/>
 <approved hash="4,1,de0c999c999ade0a"/>
-<approved hash="4,1,c2b795079501c2b1"/>
+<approved hash="4,1,b942fed2fed4b944"/>
+<approved hash="4,1,fb41bcd1bcd7fb47"/>
+<approved hash="4,1,21ef767f767921e9"/>
+<approved hash="4,1,3d447ad47ad23d42"/>
+<approved hash="4,1,04ba530a530c04bc"/>
+<approved hash="4,1,08dd4ead4eab08db"/>
+<approved hash="4,1,1013a7e3a7e51015"/>
 <approved hash="5,2,14e694908b1a379f"/>
 <approved hash="5,15,14e694908b1a379f"/>
 <approved hash="4,16,d871207e207ed871"/>
@@ -4696,34 +4692,38 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="4,16,3ebc073307333ebc"/>
 <approved hash="4,16,166e1e011e01166e"/>
 <approved hash="4,16,0ad5129a129a0ad5"/>
+<approved hash="19,16,8d8bb5012dbca148"/>
 <approved hash="19,16,1ea36882b6f415aa"/>
 <approved hash="19,16,de1c36e639e8d112"/>
 <approved hash="19,16,dcdc34263325dbdf"/>
-<approved hash="19,16,8d8bb5012dbca148"/>
 <approved hash="5,16,d1f80d936900755a"/>
+<approved hash="19,16,d9c2e638d8e8e712"/>
+<approved hash="19,16,532ee4d4da226dd8"/>
+<approved hash="19,16,a1d4d222687a1af6"/>
+<approved hash="19,16,d9dd262718f0e70a"/>
 <approved hash="5,16,8d7eb7a3cc2e8775"/>
 <approved hash="5,16,14e694908b1a379f"/>
-<approved hash="5,16,e5bd8d1e71621ba9"/>
 <approved hash="5,16,e60c8fe973fd1838"/>
+<approved hash="5,16,e5bd8d1e71621ba9"/>
 <approved hash="4,16,97137e87240a15d1"/>
-<approved hash="4,16,46b91109110f46bf"/>
 <approved hash="4,16,521665e665e05210"/>
-<approved hash="4,16,3d447ad47ad23d42"/>
 <approved hash="4,16,21ef767f767921e9"/>
-<approved hash="4,16,7f4b38db38dd7f4d"/>
-<approved hash="4,16,4b200cb00cb64b26"/>
-<approved hash="4,16,08dd4ead4eab08db"/>
-<approved hash="4,16,04ba530a530c04bc"/>
-<approved hash="4,16,ade5ea75ea73ade3"/>
-<approved hash="4,16,de0c999c999ade0a"/>
-<approved hash="4,16,b4dbc2abc2adb4dd"/>
+<approved hash="4,16,46b91109110f46bf"/>
 <approved hash="4,16,80b0d700d70680b6"/>
-<approved hash="4,16,b942fed2fed4b944"/>
+<approved hash="4,16,4b200cb00cb64b26"/>
+<approved hash="4,16,7f4b38db38dd7f4d"/>
 <approved hash="4,16,1013a7e3a7e51015"/>
 <approved hash="4,16,efe8a878a87eefee"/>
-<approved hash="4,16,c2b795079501c2b1"/>
-<approved hash="4,16,fb41bcd1bcd7fb47"/>
 <approved hash="4,16,f6de80ae80a8f6d8"/>
+<approved hash="4,16,3d447ad47ad23d42"/>
+<approved hash="4,16,04ba530a530c04bc"/>
+<approved hash="4,16,08dd4ead4eab08db"/>
+<approved hash="4,16,fb41bcd1bcd7fb47"/>
+<approved hash="4,16,b4dbc2abc2adb4dd"/>
+<approved hash="4,16,c2b795079501c2b1"/>
+<approved hash="4,16,b942fed2fed4b944"/>
+<approved hash="4,16,ade5ea75ea73ade3"/>
+<approved hash="4,16,de0c999c999ade0a"/>
 </errors>
 </board>
 </drawing>
