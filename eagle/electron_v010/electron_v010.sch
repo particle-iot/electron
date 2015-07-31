@@ -11327,7 +11327,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <clearance class="2" value="0.1905"/>
 </class>
 <class number="3" name="BAT" width="0" drill="0">
-<clearance class="3" value="0.254"/>
+<clearance class="3" value="0.2032"/>
 </class>
 </classes>
 <parts>
