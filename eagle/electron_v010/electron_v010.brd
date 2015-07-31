@@ -225,7 +225,7 @@ Particle is a registered trademark.</text>
 <wire x1="104.14" y1="10.16" x2="104.14" y2="35.56" width="0.127" layer="51"/>
 <wire x1="104.14" y1="35.56" x2="26.67" y2="35.56" width="0.127" layer="51"/>
 <wire x1="26.67" y1="35.56" x2="26.67" y2="10.16" width="0.127" layer="51"/>
-<text x="18.1356" y="49.8602" size="0.4064" layer="21" font="vector" ratio="12" rot="SR270" align="top-left">5V</text>
+<text x="19.4818" y="50.6222" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">5V</text>
 <text x="18.1864" y="48.641" size="0.6096" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">3V3</text>
 <text x="18.0086" y="45.1866" size="0.6096" layer="21" font="vector" ratio="12" rot="SR270" align="top-left">RST</text>
 <text x="18.0086" y="42.8244" size="0.6096" layer="21" font="vector" ratio="12" rot="SR270" align="top-left">VBAT</text>
@@ -1648,12 +1648,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-0.3302" y1="1.9352" x2="0.3302" y2="1.9352" width="0.127" layer="21"/>
 <wire x1="-0.3302" y1="-1.9352" x2="0.3302" y2="-1.9352" width="0.127" layer="21"/>
 </package>
-</packages>
-</library>
-<library name="pinhead">
-<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
 <package name="1X01">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
@@ -1664,7 +1658,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<pad name="1" x="0" y="0" drill="0.889" diameter="1.4732"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
@@ -1970,7 +1964,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="R21" library="Spark" package="R0402_B" value="4K7" x="16.637" y="44.323" locked="yes"/>
 <element name="U$7" library="Particle" package="M02_0.05_HEADER" value="M02_0.05_HEADER" x="14.605" y="44.958" locked="yes"/>
 <element name="C39" library="Spark" package="C0402_B" value="1uF" x="12.954" y="40.259" locked="yes" rot="R90"/>
-<element name="JP3" library="pinhead" package="1X01" value="" x="19.05" y="49.53" locked="yes" rot="MR0"/>
+<element name="JP3" library="Particle" package="1X01" value="" x="19.05" y="49.53" locked="yes" rot="MR0"/>
 <element name="JP2" library="Particle" package="1X18-D-PADS" value="M18DPAD" x="19.05" y="25.4" locked="yes" rot="MR90"/>
 </elements>
 <signals>
@@ -4655,13 +4649,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="5,1,cd766cb5ee6662d3"/>
 <approved hash="4,1,b835f6760a6946c2"/>
 <approved hash="4,1,4b200cb00cb64b26"/>
+<approved hash="4,1,521665e665e05210"/>
 <approved hash="4,1,46b91109110f46bf"/>
 <approved hash="4,1,7f4b38db38dd7f4d"/>
-<approved hash="4,1,521665e665e05210"/>
 <approved hash="4,1,c2b795079501c2b1"/>
 <approved hash="4,1,f6de80ae80a8f6d8"/>
 <approved hash="4,1,80b0d700d70680b6"/>
-<approved hash="4,1,efe8a878a87eefee"/>
 <approved hash="4,1,b4dbc2abc2adb4dd"/>
 <approved hash="4,1,ade5ea75ea73ade3"/>
 <approved hash="4,1,de0c999c999ade0a"/>
@@ -4672,6 +4665,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="4,1,04ba530a530c04bc"/>
 <approved hash="4,1,08dd4ead4eab08db"/>
 <approved hash="4,1,1013a7e3a7e51015"/>
+<approved hash="4,1,efe8a878a87eefee"/>
 <approved hash="5,2,14e694908b1a379f"/>
 <approved hash="5,15,14e694908b1a379f"/>
 <approved hash="4,16,d871207e207ed871"/>
@@ -4706,24 +4700,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="5,16,e60c8fe973fd1838"/>
 <approved hash="5,16,e5bd8d1e71621ba9"/>
 <approved hash="4,16,97137e87240a15d1"/>
+<approved hash="4,16,80b0d700d70680b6"/>
 <approved hash="4,16,521665e665e05210"/>
 <approved hash="4,16,21ef767f767921e9"/>
 <approved hash="4,16,46b91109110f46bf"/>
-<approved hash="4,16,80b0d700d70680b6"/>
 <approved hash="4,16,4b200cb00cb64b26"/>
 <approved hash="4,16,7f4b38db38dd7f4d"/>
-<approved hash="4,16,1013a7e3a7e51015"/>
-<approved hash="4,16,efe8a878a87eefee"/>
-<approved hash="4,16,f6de80ae80a8f6d8"/>
 <approved hash="4,16,3d447ad47ad23d42"/>
-<approved hash="4,16,04ba530a530c04bc"/>
-<approved hash="4,16,08dd4ead4eab08db"/>
 <approved hash="4,16,fb41bcd1bcd7fb47"/>
+<approved hash="4,16,08dd4ead4eab08db"/>
+<approved hash="4,16,efe8a878a87eefee"/>
+<approved hash="4,16,1013a7e3a7e51015"/>
+<approved hash="4,16,04ba530a530c04bc"/>
 <approved hash="4,16,b4dbc2abc2adb4dd"/>
-<approved hash="4,16,c2b795079501c2b1"/>
 <approved hash="4,16,b942fed2fed4b944"/>
 <approved hash="4,16,ade5ea75ea73ade3"/>
+<approved hash="4,16,f6de80ae80a8f6d8"/>
 <approved hash="4,16,de0c999c999ade0a"/>
+<approved hash="4,16,c2b795079501c2b1"/>
 </errors>
 </board>
 </drawing>
