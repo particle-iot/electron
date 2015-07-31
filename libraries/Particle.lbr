@@ -5990,6 +5990,23 @@ RECOMMENDED ON ALL LAYERS</text>
 <smd name="53" x="19.05" y="0.635" dx="1.4732" dy="1.27" layer="16"/>
 <smd name="54" x="21.59" y="0.635" dx="1.4732" dy="1.27" layer="16"/>
 </package>
+<package name="4020TYPE">
+<description>4020 Type Inductor
+Bourns: SRP4012 SRP4020
+TDK: SPM4012 SPM4020</description>
+<wire x1="-2.1" y1="-2.1" x2="2.1" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="2.1" x2="2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-2.1" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="49"/>
+<wire x1="2.1" y1="2.1" x2="2.1" y2="-2.1" width="0.127" layer="49"/>
+<wire x1="2.1" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="49"/>
+<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="2.1" width="0.127" layer="49"/>
+<smd name="P$1" x="-1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
+<smd name="P$2" x="1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="UCC28700">
@@ -10963,6 +10980,15 @@ SMD toroidal-core transformer with 3 windings</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="4020TYPE">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
