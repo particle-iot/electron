@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="$GND" color="15" fill="1" visible="yes" active="yes"/>
@@ -1693,7 +1693,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <class number="1" name="vcc" width="0" drill="0">
 </class>
 <class number="2" name="RF" width="0.3302" drill="0">
-<clearance class="2" value="0.1778"/>
+<clearance class="2" value="0.1905"/>
 </class>
 <class number="3" name="BAT" width="0" drill="0">
 <clearance class="3" value="0.254"/>
@@ -2763,7 +2763,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="ANT" class="2">
 <contactref element="U1" pad="56"/>
 <contactref element="J2" pad="1"/>
-<wire x1="6.86" y1="5.322" x2="6.86" y2="3.0535" width="0.8128" layer="1"/>
+<wire x1="6.86" y1="5.322" x2="6.86" y2="3.0535" width="0.3302" layer="1"/>
 <wire x1="6.86" y1="3.0535" x2="6.858" y2="3.0515" width="0.6096" layer="1"/>
 </signal>
 <signal name="+3V8">
@@ -2895,11 +2895,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.668" y1="1.143" x2="10.668" y2="2.0574" width="0.4064" layer="1"/>
 <wire x1="8.255" y1="10.541" x2="7.747" y2="10.033" width="0.4064" layer="16"/>
 <wire x1="6.858" y1="10.033" x2="7.747" y2="10.033" width="0.4064" layer="1"/>
-<wire x1="7.747" y1="2.159" x2="7.747" y2="10.033" width="0.4064" layer="16"/>
-<wire x1="7.747" y1="2.159" x2="8.763" y2="1.143" width="0.4064" layer="16"/>
-<wire x1="8.763" y1="1.143" x2="9.2368" y2="1.143" width="0.4064" layer="16"/>
-<wire x1="9.2368" y1="1.143" x2="9.398" y2="0.9818" width="0.4064" layer="16"/>
+<wire x1="7.747" y1="1.524" x2="7.747" y2="10.033" width="0.4064" layer="16"/>
 <wire x1="5.334" y1="19.304" x2="6.35" y2="18.288" width="0.4064" layer="1"/>
+<wire x1="9.3638" y1="1.016" x2="8.255" y2="1.016" width="0.4064" layer="16"/>
+<wire x1="8.255" y1="1.016" x2="7.747" y2="1.524" width="0.4064" layer="16"/>
 </signal>
 <signal name="SIM_RST">
 <contactref element="U1" pad="40"/>
@@ -4184,54 +4183,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="11.754" y1="41.967" x2="12.319" y2="41.402" width="0.254" layer="16"/>
 <wire x1="12.319" y1="41.402" x2="12.319" y2="40.7416" width="0.254" layer="16"/>
 </signal>
-<signal name="N$13">
-<polygon width="0.1524" layer="2" pour="cutout" thermals="no">
-<vertex x="6.223" y="6.35"/>
-<vertex x="7.493" y="6.35"/>
-<vertex x="7.493" y="2.413"/>
-<vertex x="7.747" y="2.413"/>
-<vertex x="7.747" y="0.635"/>
-<vertex x="5.969" y="0.635"/>
-<vertex x="5.969" y="2.413"/>
-<vertex x="6.223" y="2.413"/>
-</polygon>
-</signal>
-<signal name="N$14">
-<polygon width="0.1524" layer="15" pour="cutout" thermals="no">
-<vertex x="6.223" y="6.35"/>
-<vertex x="7.493" y="6.35"/>
-<vertex x="7.493" y="2.413"/>
-<vertex x="7.747" y="2.413"/>
-<vertex x="7.747" y="0.635"/>
-<vertex x="5.969" y="0.635"/>
-<vertex x="5.969" y="2.413"/>
-<vertex x="6.223" y="2.413"/>
-</polygon>
-</signal>
-<signal name="N$10">
-<polygon width="0.1524" layer="1" pour="cutout" thermals="no">
-<vertex x="6.223" y="6.35"/>
-<vertex x="7.493" y="6.35"/>
-<vertex x="7.493" y="2.413"/>
-<vertex x="7.747" y="2.413"/>
-<vertex x="7.747" y="0.635"/>
-<vertex x="5.969" y="0.635"/>
-<vertex x="5.969" y="2.413"/>
-<vertex x="6.223" y="2.413"/>
-</polygon>
-</signal>
-<signal name="N$23">
-<polygon width="0.1524" layer="16" pour="cutout" thermals="no">
-<vertex x="6.223" y="6.35"/>
-<vertex x="7.493" y="6.35"/>
-<vertex x="7.493" y="2.413"/>
-<vertex x="7.747" y="2.413"/>
-<vertex x="7.747" y="0.635"/>
-<vertex x="5.969" y="0.635"/>
-<vertex x="5.969" y="2.413"/>
-<vertex x="6.223" y="2.413"/>
-</polygon>
-</signal>
 </signals>
 <errors>
 <approved hash="8,1,05f7021d0f0a3d03"/>
@@ -4695,45 +4646,45 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="4,1,21ef767f767921e9"/>
 <approved hash="4,1,08dd4ead4eab08db"/>
 <approved hash="4,16,ccd8d497d497ccd8"/>
+<approved hash="4,16,8edb969496948edb"/>
 <approved hash="4,16,c0bfc930c930c0bf"/>
+<approved hash="4,16,e98df1e2f1e2e98d"/>
 <approved hash="4,16,9a74e27be27b9a74"/>
 <approved hash="4,16,f526fd49fd49f526"/>
-<approved hash="4,16,e98df1e2f1e2e98d"/>
-<approved hash="4,16,8edb969496948edb"/>
-<approved hash="4,16,b729bf46bf46b729"/>
-<approved hash="4,16,83428b2d8b2d8342"/>
-<approved hash="4,16,278a2fe52fe5278a"/>
-<approved hash="4,16,33233b4c3b4c3323"/>
-<approved hash="4,16,7cb9453645367cb9"/>
 <approved hash="4,16,d871207e207ed871"/>
-<approved hash="4,16,48d2509d509d48d2"/>
 <approved hash="4,16,7120794f794f7120"/>
 <approved hash="4,16,65876de86de86587"/>
-<approved hash="4,16,3ebc073307333ebc"/>
+<approved hash="4,16,278a2fe52fe5278a"/>
 <approved hash="4,16,166e1e011e01166e"/>
+<approved hash="4,16,3ebc073307333ebc"/>
+<approved hash="4,16,33233b4c3b4c3323"/>
 <approved hash="4,16,0ad5129a129a0ad5"/>
-<approved hash="5,16,4921f12cd2a49eac"/>
+<approved hash="4,16,83428b2d8b2d8342"/>
+<approved hash="4,16,48d2509d509d48d2"/>
+<approved hash="4,16,7cb9453645367cb9"/>
+<approved hash="4,16,b729bf46bf46b729"/>
 <approved hash="5,16,99c0541764c2657a"/>
+<approved hash="5,16,4921f12cd2a49eac"/>
 <approved hash="5,16,ad80ad2fa35aad9d"/>
 <approved hash="4,16,97137e87240a15d1"/>
-<approved hash="4,16,b4dbc2abc2adb4dd"/>
-<approved hash="4,16,f6de80ae80a8f6d8"/>
-<approved hash="4,16,c2b795079501c2b1"/>
-<approved hash="4,16,fb41bcd1bcd7fb47"/>
-<approved hash="4,16,de0c999c999ade0a"/>
-<approved hash="4,16,efe8a878a87eefee"/>
-<approved hash="4,16,80b0d700d70680b6"/>
-<approved hash="4,16,ade5ea75ea73ade3"/>
-<approved hash="4,16,b942fed2fed4b944"/>
-<approved hash="4,16,4b200cb00cb64b26"/>
-<approved hash="4,16,46b91109110f46bf"/>
-<approved hash="4,16,1013a7e3a7e51015"/>
-<approved hash="4,16,7f4b38db38dd7f4d"/>
-<approved hash="4,16,04ba530a530c04bc"/>
-<approved hash="4,16,08dd4ead4eab08db"/>
 <approved hash="4,16,521665e665e05210"/>
-<approved hash="4,16,3d447ad47ad23d42"/>
 <approved hash="4,16,21ef767f767921e9"/>
+<approved hash="4,16,46b91109110f46bf"/>
+<approved hash="4,16,4b200cb00cb64b26"/>
+<approved hash="4,16,3d447ad47ad23d42"/>
+<approved hash="4,16,7f4b38db38dd7f4d"/>
+<approved hash="4,16,08dd4ead4eab08db"/>
+<approved hash="4,16,de0c999c999ade0a"/>
+<approved hash="4,16,f6de80ae80a8f6d8"/>
+<approved hash="4,16,ade5ea75ea73ade3"/>
+<approved hash="4,16,b4dbc2abc2adb4dd"/>
+<approved hash="4,16,80b0d700d70680b6"/>
+<approved hash="4,16,b942fed2fed4b944"/>
+<approved hash="4,16,c2b795079501c2b1"/>
+<approved hash="4,16,1013a7e3a7e51015"/>
+<approved hash="4,16,04ba530a530c04bc"/>
+<approved hash="4,16,fb41bcd1bcd7fb47"/>
+<approved hash="4,16,efe8a878a87eefee"/>
 </errors>
 </board>
 </drawing>
