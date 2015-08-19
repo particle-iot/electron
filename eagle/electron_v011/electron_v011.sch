@@ -11434,7 +11434,6 @@ TDK: SPM4012 SPM4020</description>
 <part name="R18" library="Spark" deviceset="R-US_" device="" value="5.52K"/>
 <part name="R19" library="Spark" deviceset="R-US_" device="" value="10K"/>
 <part name="C7" library="Spark" deviceset="C-US" device="" value="47nF"/>
-<part name="U$6" library="Particle" deviceset="INDUCTOR" device="G" value="2.2uH"/>
 <part name="C40" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="10uF"/>
 <part name="C41" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="10uF"/>
 <part name="C4" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="1uF"/>
@@ -11459,6 +11458,7 @@ TDK: SPM4012 SPM4020</description>
 <part name="JP3" library="Particle" deviceset="PINHD-1X1" device=""/>
 <part name="JP2" library="Particle" deviceset="M18" device="DPAD"/>
 <part name="U$5" library="Particle" deviceset="TPS62291" device="DRV"/>
+<part name="U$6" library="Particle" deviceset="INDUCTOR" device="H" value="2.2uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -13709,10 +13709,6 @@ Particle is a registered trademark.</text>
 <attribute name="NAME" x="73.914" y="68.961" size="1.778" layer="95"/>
 <attribute name="VALUE" x="81.026" y="64.389" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$6" gate="G$1" x="144.78" y="133.35" smashed="yes">
-<attribute name="NAME" x="143.51" y="130.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="147.32" y="139.7" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="C40" gate="G$1" x="106.68" y="130.81" smashed="yes">
 <attribute name="NAME" x="108.204" y="131.191" size="1.778" layer="95"/>
 <attribute name="VALUE" x="108.204" y="126.111" size="1.778" layer="96"/>
@@ -13744,6 +13740,10 @@ Particle is a registered trademark.</text>
 <attribute name="VALUE" x="172.974" y="115.951" size="1.778" layer="96"/>
 </instance>
 <instance part="U$5" gate="G$1" x="125.73" y="138.43"/>
+<instance part="U$6" gate="G$1" x="144.78" y="133.35" smashed="yes">
+<attribute name="NAME" x="147.32" y="138.43" size="1.27" layer="95" rot="R270"/>
+<attribute name="VALUE" x="147.32" y="133.35" size="1.27" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13791,7 +13791,6 @@ Particle is a registered trademark.</text>
 <segment>
 <pinref part="+3V18" gate="G$1" pin="+3V3"/>
 <wire x1="154.94" y1="153.67" x2="154.94" y2="123.19" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="2"/>
 <pinref part="C41" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="125.73" x2="144.78" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="123.19" x2="144.78" y2="120.65" width="0.1524" layer="91"/>
@@ -13801,6 +13800,7 @@ Particle is a registered trademark.</text>
 <wire x1="139.7" y1="133.35" x2="139.7" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="123.19" x2="144.78" y2="123.19" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="P$3"/>
+<pinref part="U$6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14003,10 +14003,10 @@ Particle is a registered trademark.</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="143.51" x2="144.78" y2="143.51" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="143.51" x2="144.78" y2="140.97" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
+<pinref part="U$6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="!LOW_BAT_INT_UC" class="0">
