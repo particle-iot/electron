@@ -269,6 +269,7 @@ Particle is a registered trademark.</text>
 <text x="19.304" y="43.18" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">RST</text>
 <text x="19.304" y="45.72" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">3V3</text>
 <text x="19.558" y="48.26" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">5V</text>
+<wire x1="2.794" y1="8.763" x2="5.588" y2="8.763" width="0.3048" layer="22"/>
 </plain>
 <libraries>
 <library name="SparkFun">
