@@ -10337,29 +10337,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="P$1" x="-0.635" y="0" drill="0.6" diameter="1"/>
 <pad name="P$2" x="0.635" y="0" drill="0.6" diameter="1"/>
 </package>
-<package name="DSBGA">
-<description>&lt;b&gt;DSBGA&lt;/b&gt; DIE-SIZE BALL GRID ARRAY&lt;p&gt;</description>
-<wire x1="-0.675" y1="0.425" x2="0.675" y2="0.425" width="0.1016" layer="51"/>
-<wire x1="0.675" y1="0.425" x2="0.675" y2="-0.425" width="0.1016" layer="51"/>
-<wire x1="0.675" y1="-0.425" x2="-0.675" y2="-0.425" width="0.1016" layer="51"/>
-<wire x1="-0.675" y1="-0.425" x2="-0.675" y2="0.425" width="0.1016" layer="51"/>
-<circle x="-0.5" y="-0.25" radius="0.175" width="0" layer="29"/>
-<circle x="0" y="-0.25" radius="0.175" width="0" layer="29"/>
-<circle x="0.5" y="-0.25" radius="0.175" width="0" layer="29"/>
-<circle x="0.5" y="0.25" radius="0.175" width="0" layer="29"/>
-<circle x="0" y="0.25" radius="0.175" width="0" layer="29"/>
-<circle x="-0.5" y="0.25" radius="0.175" width="0" layer="29"/>
-<smd name="A1" x="-0.5" y="-0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
-<smd name="B1" x="0" y="-0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
-<smd name="C1" x="0.5" y="-0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
-<smd name="C2" x="0.5" y="0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
-<smd name="B2" x="0" y="0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
-<smd name="A2" x="-0.5" y="0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
-<text x="-0.725" y="0.725" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.725" y="-2.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.675" y1="-0.4" x2="-0.225" y2="-0.175" layer="51"/>
-<rectangle x1="-0.3" y1="-0.375" x2="-0.225" y2="-0.175" layer="21"/>
-</package>
 <package name="INDUCTOR-0805">
 <wire x1="-0.153" y1="0.954" x2="0.153" y2="0.954" width="0.1524" layer="21"/>
 <wire x1="-0.153" y1="-0.954" x2="0.153" y2="-0.954" width="0.1524" layer="21"/>
@@ -10975,6 +10952,18 @@ TDK: SPM4012 SPM4020</description>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="S-PWSON-N6">
+<smd name="TP" x="0" y="0" dx="1.6" dy="0.9" layer="1"/>
+<smd name="P$1" x="-0.65" y="-1" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$2" x="0" y="-1" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$3" x="0.65" y="-1" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$4" x="0.65" y="1" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$5" x="0" y="1" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$6" x="-0.65" y="1" dx="0.3" dy="0.6" layer="1"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
+<circle x="-1.1938" y="-0.9144" radius="0.05679375" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M02_0.05_HEADER">
@@ -10984,26 +10973,6 @@ TDK: SPM4012 SPM4020</description>
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <pin name="P$1" x="-10.16" y="2.54" length="middle"/>
 <pin name="P$2" x="-10.16" y="-2.54" length="middle"/>
-</symbol>
-<symbol name="LM3281">
-<description>&lt;b&gt;LM3281&lt;/b&gt;</description>
-<wire x1="-8.89" y1="7.62" x2="8.89" y2="7.62" width="0.254" layer="94"/>
-<wire x1="8.89" y1="7.62" x2="8.89" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="8.89" y1="-7.62" x2="-8.89" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-8.89" y1="-7.62" x2="-8.89" y2="7.62" width="0.254" layer="94"/>
-<pin name="B1" x="-11.43" y="5.08" length="short"/>
-<pin name="C1" x="-11.43" y="-5.08" length="short"/>
-<pin name="B2" x="11.43" y="5.08" length="short" rot="R180"/>
-<pin name="A1" x="11.43" y="-5.08" length="short" rot="R180"/>
-<pin name="A2" x="0" y="10.16" length="short" rot="R270"/>
-<pin name="C2" x="0" y="-10.16" length="short" rot="R90"/>
-<text x="-1.27" y="6.35" size="1.27" layer="94">VIN</text>
-<text x="8.89" y="3.81" size="1.27" layer="94" rot="R90">SW</text>
-<text x="8.89" y="-6.35" size="1.27" layer="94" rot="R90">FB</text>
-<text x="-1.27" y="-7.62" size="1.27" layer="94">GND</text>
-<text x="-7.62" y="-6.35" size="1.27" layer="94" rot="R90">EN</text>
-<text x="-7.62" y="2.54" size="1.27" layer="94" rot="R90">MODE</text>
-<text x="-2.54" y="0" size="1.27" layer="94">LM3281</text>
 </symbol>
 <symbol name="INDUCTOR-1">
 <wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
@@ -11072,6 +11041,25 @@ TDK: SPM4012 SPM4020</description>
 <text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
+<symbol name="TPS62291">
+<wire x1="-8.89" y1="7.62" x2="8.89" y2="7.62" width="0.254" layer="94"/>
+<wire x1="8.89" y1="7.62" x2="8.89" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-7.62" x2="-8.89" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-7.62" x2="-8.89" y2="7.62" width="0.254" layer="94"/>
+<pin name="P$2" x="-11.43" y="-5.08" length="short"/>
+<pin name="P$4" x="-11.43" y="5.08" length="short"/>
+<pin name="P$1" x="11.43" y="5.08" length="short" rot="R180"/>
+<pin name="P$3" x="11.43" y="-5.08" length="short" rot="R180"/>
+<pin name="P$5" x="0" y="10.16" length="short" rot="R270"/>
+<pin name="P$6" x="0" y="-10.16" length="short" rot="R90"/>
+<text x="-1.27" y="6.35" size="1.27" layer="94">VIN</text>
+<text x="8.89" y="3.81" size="1.27" layer="94" rot="R90">SW</text>
+<text x="8.89" y="-6.35" size="1.27" layer="94" rot="R90">FB</text>
+<text x="-1.27" y="-7.62" size="1.27" layer="94">GND</text>
+<text x="-7.62" y="3.81" size="1.27" layer="94" rot="R90">EN</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="94" rot="R90">MODE</text>
+<text x="-3.81" y="0" size="1.27" layer="94">TPS62291</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="M02_0.05_HEADER">
@@ -11083,28 +11071,6 @@ TDK: SPM4012 SPM4020</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LM3281" uservalue="yes">
-<description>&lt;b&gt;LM3281&lt;/b&gt;
-3.3-V, 1.2-A, 6-MHz Miniature Step-Down DC-DC Converter for Wireless Connectivity Solutions</description>
-<gates>
-<gate name="G$1" symbol="LM3281" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_DSBGA" package="DSBGA">
-<connects>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="B1" pad="B1"/>
-<connect gate="G$1" pin="B2" pad="B2"/>
-<connect gate="G$1" pin="C1" pad="C1"/>
-<connect gate="G$1" pin="C2" pad="C2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11298,6 +11264,26 @@ TDK: SPM4012 SPM4020</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TPS62291">
+<gates>
+<gate name="G$1" symbol="TPS62291" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DRV" package="S-PWSON-N6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6 TP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -11448,9 +11434,9 @@ TDK: SPM4012 SPM4020</description>
 <part name="R18" library="Spark" deviceset="R-US_" device="" value="5.52K"/>
 <part name="R19" library="Spark" deviceset="R-US_" device="" value="10K"/>
 <part name="C7" library="Spark" deviceset="C-US" device="" value="47nF"/>
-<part name="U$6" library="Particle" deviceset="INDUCTOR" device="G" value="0.47uH"/>
-<part name="C40" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="2.2uF"/>
-<part name="C41" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="2.2uF"/>
+<part name="U$6" library="Particle" deviceset="INDUCTOR" device="G" value="2.2uH"/>
+<part name="C40" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="10uF"/>
+<part name="C41" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="10uF"/>
 <part name="C4" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="1uF"/>
 <part name="C5" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="20uF"/>
 <part name="C23" library="Bretts-Spark-Library" deviceset="C-US" device="0603" value="10uF"/>
@@ -11461,7 +11447,6 @@ TDK: SPM4012 SPM4020</description>
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="150"/>
 <part name="R23" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="1K"/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$5" library="Particle" deviceset="LM3281" device="_DSBGA"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device="" value="+3V8"/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
@@ -11473,6 +11458,7 @@ TDK: SPM4012 SPM4020</description>
 <part name="C39" library="Spark" deviceset="C-US" device="" value="1uF"/>
 <part name="JP3" library="Particle" deviceset="PINHD-1X1" device=""/>
 <part name="JP2" library="Particle" deviceset="M18" device="DPAD"/>
+<part name="U$5" library="Particle" deviceset="TPS62291" device="DRV"/>
 </parts>
 <sheets>
 <sheet>
@@ -13739,7 +13725,6 @@ Particle is a registered trademark.</text>
 <instance part="R22" gate="G$1" x="180.34" y="135.89" rot="R90"/>
 <instance part="R23" gate="G$1" x="171.45" y="135.89" rot="R90"/>
 <instance part="+3V13" gate="G$1" x="180.34" y="156.21"/>
-<instance part="U$5" gate="G$1" x="125.73" y="138.43"/>
 <instance part="GND38" gate="1" x="125.73" y="105.41"/>
 <instance part="+3V15" gate="G$1" x="106.68" y="156.21" smashed="yes">
 <attribute name="VALUE" x="109.22" y="158.75" size="1.778" layer="96" rot="R180"/>
@@ -13758,6 +13743,7 @@ Particle is a registered trademark.</text>
 <attribute name="NAME" x="172.974" y="121.031" size="1.778" layer="95"/>
 <attribute name="VALUE" x="172.974" y="115.951" size="1.778" layer="96"/>
 </instance>
+<instance part="U$5" gate="G$1" x="125.73" y="138.43"/>
 </instances>
 <busses>
 </busses>
@@ -13811,10 +13797,10 @@ Particle is a registered trademark.</text>
 <wire x1="144.78" y1="123.19" x2="144.78" y2="120.65" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="123.19" x2="144.78" y2="123.19" width="0.1524" layer="91"/>
 <junction x="144.78" y="123.19"/>
-<pinref part="U$5" gate="G$1" pin="A1"/>
 <wire x1="137.16" y1="133.35" x2="139.7" y2="133.35" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="133.35" x2="139.7" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="123.19" x2="144.78" y2="123.19" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$3"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13867,15 +13853,20 @@ Particle is a registered trademark.</text>
 <segment>
 <pinref part="C40" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="125.73" x2="106.68" y2="110.49" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="110.49" x2="125.73" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="110.49" x2="111.76" y2="110.49" width="0.1524" layer="91"/>
 <pinref part="C41" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="110.49" x2="125.73" y2="110.49" width="0.1524" layer="91"/>
 <wire x1="125.73" y1="110.49" x2="144.78" y2="110.49" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="110.49" x2="144.78" y2="113.03" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
 <wire x1="125.73" y1="107.95" x2="125.73" y2="110.49" width="0.1524" layer="91"/>
 <junction x="125.73" y="110.49"/>
-<pinref part="U$5" gate="G$1" pin="C2"/>
 <wire x1="125.73" y1="128.27" x2="125.73" y2="110.49" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$6"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<wire x1="114.3" y1="133.35" x2="111.76" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="133.35" x2="111.76" y2="110.49" width="0.1524" layer="91"/>
+<junction x="111.76" y="110.49"/>
 </segment>
 <segment>
 <wire x1="171.45" y1="110.49" x2="171.45" y2="115.57" width="0.1524" layer="91"/>
@@ -13954,20 +13945,16 @@ Particle is a registered trademark.</text>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
 <pinref part="C40" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="153.67" x2="106.68" y2="151.13" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="A2"/>
 <wire x1="106.68" y1="151.13" x2="106.68" y2="133.35" width="0.1524" layer="91"/>
 <wire x1="125.73" y1="148.59" x2="125.73" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="125.73" y1="151.13" x2="111.76" y2="151.13" width="0.1524" layer="91"/>
 <junction x="106.68" y="151.13"/>
-<pinref part="U$5" gate="G$1" pin="C1"/>
 <wire x1="111.76" y1="151.13" x2="106.68" y2="151.13" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="133.35" x2="111.76" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="133.35" x2="111.76" y2="143.51" width="0.1524" layer="91"/>
 <junction x="111.76" y="151.13"/>
-<pinref part="U$5" gate="G$1" pin="B1"/>
 <wire x1="111.76" y1="143.51" x2="111.76" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="143.51" x2="111.76" y2="143.51" width="0.1524" layer="91"/>
-<junction x="111.76" y="143.51"/>
+<pinref part="U$5" gate="G$1" pin="P$4"/>
+<pinref part="U$5" gate="G$1" pin="P$5"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -14016,10 +14003,10 @@ Particle is a registered trademark.</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="B2"/>
 <pinref part="U$6" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="143.51" x2="144.78" y2="143.51" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="143.51" x2="144.78" y2="140.97" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="!LOW_BAT_INT_UC" class="0">
