@@ -12232,7 +12232,7 @@ TDK: SPM4012 SPM4020</description>
 <pinref part="RED_LED_0603" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="SW" class="0">
+<net name="SW1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SW@20"/>
 <wire x1="176.53" y1="153.67" x2="181.61" y2="153.67" width="0.1524" layer="91"/>
@@ -14001,12 +14001,13 @@ Particle is a registered trademark.</text>
 <label x="215.9" y="128.27" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SW2" class="0">
 <segment>
 <wire x1="137.16" y1="143.51" x2="144.78" y2="143.51" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="143.51" x2="144.78" y2="140.97" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
 <pinref part="U$6" gate="G$1" pin="1"/>
+<label x="139.7" y="143.51" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!LOW_BAT_INT_UC" class="0">

@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -2142,9 +2142,25 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="JP2" pad="18"/>
 <contactref element="U$5" pad="P$3"/>
 <contactref element="U$6" pad="P$2"/>
-<wire x1="4.46" y1="40.656" x2="5.5955" y2="40.7718" width="0" layer="19" extent="1-1"/>
-<wire x1="5.461" y1="39.116" x2="5.5955" y2="40.7718" width="0" layer="19" extent="1-1"/>
-<wire x1="6.7548" y1="37.8524" x2="6.873" y2="36.957" width="0" layer="19" extent="1-16"/>
+<polygon width="0.1524" layer="1" thermals="no" rank="2">
+<vertex x="4.318" y="40.894"/>
+<vertex x="4.826" y="40.894"/>
+<vertex x="5.207" y="41.275"/>
+<vertex x="5.969" y="41.275"/>
+<vertex x="6.35" y="40.894"/>
+<vertex x="6.35" y="40.132"/>
+<vertex x="6.604" y="39.878"/>
+<vertex x="7.62" y="39.878"/>
+<vertex x="7.874" y="39.624"/>
+<vertex x="7.874" y="36.068"/>
+<vertex x="7.62" y="35.814"/>
+<vertex x="5.461" y="35.814"/>
+<vertex x="5.207" y="36.068"/>
+<vertex x="5.207" y="39.878"/>
+<vertex x="4.826" y="40.259"/>
+<vertex x="4.445" y="40.259"/>
+<vertex x="4.318" y="40.386"/>
+</polygon>
 </signal>
 <signal name="!RST">
 <contactref element="R8" pad="1"/>
@@ -2155,9 +2171,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="12.192" y1="36.9316" x2="12.192" y2="36.8554" width="0.2032" layer="1"/>
 <wire x1="17.399" y1="41.91" x2="17.399" y2="38.354" width="0.2032" layer="1"/>
 <wire x1="17.399" y1="38.354" x2="16.51" y2="37.465" width="0.2032" layer="1"/>
-<wire x1="13.462" y1="37.465" x2="16.51" y2="37.465" width="0.2032" layer="1"/>
-<wire x1="12.7" y1="38.608" x2="13.081" y2="38.227" width="0.2032" layer="1"/>
-<wire x1="13.081" y1="38.227" x2="13.081" y2="37.846" width="0.2032" layer="1"/>
+<wire x1="14.097" y1="37.465" x2="16.51" y2="37.465" width="0.2032" layer="1"/>
 <wire x1="12.192" y1="36.8554" x2="12.2428" y2="36.8554" width="0.2032" layer="1"/>
 <wire x1="12.2428" y1="36.8554" x2="13.081" y2="36.0172" width="0.2032" layer="1"/>
 <wire x1="13.081" y1="36.0172" x2="13.081" y2="35.9664" width="0.2032" layer="1"/>
@@ -2190,13 +2204,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="13.081" y1="35.6362" x2="13.081" y2="35.9664" width="0.2032" layer="1"/>
 <wire x1="11.8618" y1="37.6682" x2="12.192" y2="37.338" width="0.2032" layer="1"/>
 <wire x1="12.192" y1="37.338" x2="12.192" y2="36.9316" width="0.2032" layer="1"/>
-<wire x1="12.2174" y1="38.608" x2="12.7" y2="38.608" width="0.2032" layer="1"/>
-<wire x1="13.081" y1="37.846" x2="13.462" y2="37.465" width="0.2032" layer="1"/>
+<wire x1="12.2174" y1="38.608" x2="12.573" y2="38.608" width="0.2032" layer="1"/>
+<wire x1="12.573" y1="38.608" x2="12.7" y2="38.608" width="0.2032" layer="1"/>
 <wire x1="17.399" y1="41.91" x2="19.05" y2="43.561" width="0.2032" layer="1"/>
 <contactref element="JP2" pad="17"/>
 <wire x1="19.05" y1="43.561" x2="19.05" y2="44.45" width="0.2032" layer="1"/>
 <wire x1="17.399" y1="41.91" x2="19.05" y2="43.561" width="0.2032" layer="2"/>
 <wire x1="19.05" y1="43.561" x2="19.05" y2="44.45" width="0.2032" layer="2"/>
+<wire x1="14.097" y1="37.465" x2="12.954" y2="38.608" width="0.2032" layer="1"/>
+<wire x1="12.954" y1="38.608" x2="12.7" y2="38.608" width="0.2032" layer="1"/>
 </signal>
 <signal name="USB_DP">
 <contactref element="R5" pad="2"/>
@@ -2792,8 +2808,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="3.937" y="3.937"/>
 <vertex x="2.794" y="3.937"/>
 </polygon>
-<wire x1="9.271" y1="38.227" x2="8.636" y2="38.862" width="0.3048" layer="15"/>
-<wire x1="8.636" y1="38.862" x2="8.636" y2="39.243" width="0.3048" layer="15"/>
 <wire x1="9.398" y1="38.227" x2="9.271" y2="38.227" width="0.3048" layer="15"/>
 <wire x1="8.89" y1="40.017" x2="8.636" y2="39.763" width="0.3048" layer="1"/>
 <wire x1="8.636" y1="39.763" x2="8.636" y2="38.862" width="0.3048" layer="1"/>
@@ -2810,7 +2824,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="2.667" y="4.191"/>
 <vertex x="2.413" y="4.445"/>
 </polygon>
-<wire x1="8.636" y1="39.243" x2="8.382" y2="39.497" width="0.3048" layer="15"/>
 <via x="3.5306" y="45.6438" extent="1-16" drill="0.3"/>
 <via x="4.3434" y="45.6438" extent="1-16" drill="0.3"/>
 <polygon width="0.1524" layer="16" thermals="no">
@@ -2837,10 +2850,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 <via x="2.921" y="4.699" extent="1-16" drill="0.3"/>
 <contactref element="U$5" pad="P$4"/>
 <contactref element="U$5" pad="P$5"/>
-<wire x1="4.46" y1="42.656" x2="4.3029" y2="43.9482" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="42.656" x2="4.46" y2="42.656" width="0" layer="19" extent="1-1"/>
-<wire x1="3.937" y1="45.3644" x2="4.3029" y2="43.9482" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="40.017" x2="8.185" y2="43.692" width="0" layer="19" extent="1-16"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="4.445" y="42.418"/>
+<vertex x="3.683" y="42.418"/>
+<vertex x="3.683" y="42.926"/>
+<vertex x="3.429" y="43.18"/>
+<vertex x="3.429" y="45.72"/>
+<vertex x="3.81" y="46.101"/>
+<vertex x="4.318" y="46.101"/>
+<vertex x="4.699" y="45.72"/>
+<vertex x="4.699" y="43.053"/>
+<vertex x="4.572" y="42.926"/>
+<vertex x="4.572" y="42.418"/>
+</polygon>
+<wire x1="9.271" y1="38.227" x2="3.937" y2="43.561" width="0.3048" layer="15"/>
+<wire x1="3.937" y1="43.561" x2="3.937" y2="45.3644" width="0.3048" layer="15"/>
 </signal>
 <signal name="SIM_VCC">
 <contactref element="U1" pad="41"/>
@@ -3881,7 +3905,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="13.7668" y1="35.8902" x2="15.24" y2="34.417" width="0.2032" layer="15"/>
 <wire x1="15.24" y1="34.417" x2="15.24" y2="32.766" width="0.2032" layer="15"/>
 </signal>
-<signal name="SW">
+<signal name="SW1">
 <contactref element="U$1" pad="19"/>
 <contactref element="U$1" pad="20"/>
 <contactref element="U$4" pad="P$1"/>
@@ -4085,10 +4109,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="14.3764" y1="39.7764" x2="14.609" y2="40.009" width="0.3048" layer="1"/>
 <wire x1="14.609" y1="40.637" x2="14.609" y2="40.009" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$3">
+<signal name="SW2">
 <contactref element="U$5" pad="P$1"/>
 <contactref element="U$6" pad="P$1"/>
-<wire x1="3.6548" y1="37.8524" x2="3.16" y2="40.656" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1" thermals="no" rank="3">
+<vertex x="3.048" y="40.894"/>
+<vertex x="3.302" y="40.894"/>
+<vertex x="3.302" y="40.386"/>
+<vertex x="3.302" y="40.132"/>
+<vertex x="3.556" y="39.878"/>
+<vertex x="4.572" y="39.878"/>
+<vertex x="4.699" y="39.751"/>
+<vertex x="4.699" y="35.941"/>
+<vertex x="4.572" y="35.814"/>
+<vertex x="2.794" y="35.814"/>
+<vertex x="2.667" y="35.941"/>
+<vertex x="2.667" y="39.751"/>
+<vertex x="3.048" y="40.132"/>
+</polygon>
 </signal>
 <signal name="N$2">
 <contactref element="U$1" pad="3"/>
