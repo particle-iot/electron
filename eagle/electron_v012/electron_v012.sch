@@ -10962,7 +10962,17 @@ TDK: SPM4012 SPM4020</description>
 <smd name="P$6" x="-0.65" y="1" dx="0.3" dy="0.6" layer="1"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
-<circle x="-1.1938" y="-0.9144" radius="0.05679375" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<rectangle x1="0.5" y1="-1" x2="0.8" y2="-0.7" layer="51"/>
+<rectangle x1="-0.15" y1="-1" x2="0.15" y2="-0.7" layer="51"/>
+<rectangle x1="-0.8" y1="-1" x2="-0.5" y2="-0.7" layer="51"/>
+<rectangle x1="-0.8" y1="0.7" x2="-0.5" y2="1" layer="51"/>
+<rectangle x1="-0.15" y1="0.7" x2="0.15" y2="1" layer="51"/>
+<rectangle x1="0.5" y1="0.7" x2="0.8" y2="1" layer="51"/>
+<circle x="-1.25" y="-1.1" radius="0.1581125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

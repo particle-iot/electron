@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -1675,7 +1675,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="P$6" x="-0.65" y="1" dx="0.3" dy="0.6" layer="1"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
-<circle x="-1.1938" y="-0.9144" radius="0.05679375" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<rectangle x1="0.5" y1="-1" x2="0.8" y2="-0.7" layer="51"/>
+<rectangle x1="-0.15" y1="-1" x2="0.15" y2="-0.7" layer="51"/>
+<rectangle x1="-0.8" y1="-1" x2="-0.5" y2="-0.7" layer="51"/>
+<rectangle x1="-0.8" y1="0.7" x2="-0.5" y2="1" layer="51"/>
+<rectangle x1="-0.15" y1="0.7" x2="0.15" y2="1" layer="51"/>
+<rectangle x1="0.5" y1="0.7" x2="0.8" y2="1" layer="51"/>
+<circle x="-1.25" y="-1.1" radius="0.1581125" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1897,7 +1907,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </element>
 <element name="C16" library="Spark" package="C0402_B" value="15pF" x="3.302" y="3.429" locked="yes"/>
 <element name="R10" library="Spark" package="R0402_B" value="1K" x="13.97" y="36.449" locked="yes" rot="R270"/>
-<element name="U$2" library="Spark" package="SPARK_LOGO2" value="SPARK_LOGO2" x="16.3322" y="0.254"/>
+<element name="U$2" library="Spark" package="SPARK_LOGO2" value="SPARK_LOGO2" x="16.3322" y="0.254" locked="yes"/>
 <element name="R8" library="Spark" package="R0402_B" value="10K" x="12.192" y="36.449" locked="yes" rot="R270"/>
 <element name="R9" library="Spark" package="R0402_B" value="1K" x="9.525" y="31.623" locked="yes" rot="R180"/>
 <element name="R11" library="Spark" package="R0402_B" value="1K" x="9.525" y="35.941" locked="yes" rot="R180"/>
