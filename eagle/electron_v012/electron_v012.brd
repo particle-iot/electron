@@ -9,7 +9,7 @@
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="$GND" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="$GND" color="15" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Graphics-Top" color="15" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,22 +22,22 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="GRAPHICSB" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="$+3V3" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="$+3V3" color="11" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -56,10 +56,10 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -88,7 +88,7 @@
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="Design_Info" color="7" fill="1" visible="no" active="yes"/>
-<layer number="112" name="CC430_Restrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="112bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="113" name="LOGO" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
@@ -158,6 +158,97 @@
 <wire x1="19.05" y1="0" x2="20.32" y2="2.54" width="0.2032" layer="20"/>
 <wire x1="20.32" y1="2.54" x2="20.32" y2="50.8" width="0.2032" layer="20"/>
 <wire x1="20.32" y1="50.8" x2="0" y2="50.8" width="0.2032" layer="20"/>
+<text x="27.94" y="49.53" size="1.016" layer="51" font="vector" align="top-left">NOTES:
+
+Layer stack up:
+ 1 - GTL  - Top Signal, GND
+ 2 - G2L  - Inner Signal, GND, +3V8
+15 - G15L - Inner Signal, GND, +3V3
+16 - GBL  - Bottom Signal, GND</text>
+<wire x1="26.6192" y1="38.1254" x2="26.6192" y2="50.8254" width="0.127" layer="51"/>
+<wire x1="26.6192" y1="50.8254" x2="59.3852" y2="50.8254" width="0.127" layer="51"/>
+<wire x1="59.3852" y1="50.8254" x2="59.3852" y2="38.1254" width="0.127" layer="51"/>
+<wire x1="59.3852" y1="38.1254" x2="26.6192" y2="38.1254" width="0.127" layer="51"/>
+<text x="27.94" y="11.43" size="1.016" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. PARTICLE INDUSTRIES, INC 
+("PARTICLE") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+OR NON-INFRINGEMENT.
+
+Particle may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Particle reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Particle is a registered trademark.</text>
+<wire x1="26.67" y1="10.16" x2="104.14" y2="10.16" width="0.127" layer="51"/>
+<wire x1="104.14" y1="10.16" x2="104.14" y2="35.56" width="0.127" layer="51"/>
+<wire x1="104.14" y1="35.56" x2="26.67" y2="35.56" width="0.127" layer="51"/>
+<wire x1="26.67" y1="35.56" x2="26.67" y2="10.16" width="0.127" layer="51"/>
+<wire x1="2.794" y1="8.763" x2="5.588" y2="8.763" width="0.3048" layer="22"/>
+<wire x1="0.381" y1="51.308" x2="0.381" y2="48.26" width="0" layer="49"/>
+<wire x1="0.381" y1="48.26" x2="0.381" y2="45.72" width="0" layer="49"/>
+<wire x1="0.381" y1="45.72" x2="0.381" y2="43.18" width="0" layer="49"/>
+<wire x1="0.381" y1="43.18" x2="0.381" y2="40.64" width="0" layer="49"/>
+<wire x1="0.381" y1="40.64" x2="0.381" y2="38.1" width="0" layer="49"/>
+<wire x1="0.381" y1="38.1" x2="0.381" y2="35.56" width="0" layer="49"/>
+<wire x1="0.381" y1="35.56" x2="0.381" y2="33.02" width="0" layer="49"/>
+<wire x1="0.381" y1="33.02" x2="0.381" y2="30.48" width="0" layer="49"/>
+<wire x1="0.381" y1="30.48" x2="0.381" y2="27.94" width="0" layer="49"/>
+<wire x1="0.381" y1="27.94" x2="0.381" y2="25.4" width="0" layer="49"/>
+<wire x1="0.381" y1="25.4" x2="0.381" y2="22.86" width="0" layer="49"/>
+<wire x1="0.381" y1="22.86" x2="0.381" y2="20.32" width="0" layer="49"/>
+<wire x1="0.381" y1="20.32" x2="0.381" y2="17.78" width="0" layer="49"/>
+<wire x1="0.381" y1="12.7" x2="0.381" y2="10.16" width="0" layer="49"/>
+<wire x1="0.381" y1="10.16" x2="0.381" y2="7.62" width="0" layer="49"/>
+<wire x1="0.381" y1="7.62" x2="0.381" y2="5.08" width="0" layer="49"/>
+<wire x1="0.381" y1="5.08" x2="0.381" y2="2.54" width="0" layer="49"/>
+<wire x1="0.381" y1="2.54" x2="0.381" y2="-0.127" width="0" layer="49"/>
+<wire x1="19.939" y1="51.054" x2="19.939" y2="48.26" width="0" layer="49"/>
+<wire x1="19.939" y1="48.26" x2="19.939" y2="45.72" width="0" layer="49"/>
+<wire x1="19.939" y1="45.72" x2="19.939" y2="43.18" width="0" layer="49"/>
+<wire x1="19.939" y1="43.18" x2="19.939" y2="40.64" width="0" layer="49"/>
+<wire x1="19.939" y1="40.64" x2="19.939" y2="38.1" width="0" layer="49"/>
+<wire x1="19.939" y1="38.1" x2="19.939" y2="35.56" width="0" layer="49"/>
+<wire x1="19.939" y1="35.56" x2="19.939" y2="33.02" width="0" layer="49"/>
+<wire x1="19.939" y1="33.02" x2="19.939" y2="30.48" width="0" layer="49"/>
+<wire x1="19.939" y1="30.48" x2="19.939" y2="27.94" width="0" layer="49"/>
+<wire x1="19.939" y1="27.94" x2="19.939" y2="25.4" width="0" layer="49"/>
+<wire x1="19.939" y1="25.4" x2="19.939" y2="22.86" width="0" layer="49"/>
+<wire x1="19.939" y1="22.86" x2="19.939" y2="20.32" width="0" layer="49"/>
+<wire x1="19.939" y1="20.32" x2="19.939" y2="17.78" width="0" layer="49"/>
+<wire x1="19.939" y1="17.78" x2="19.939" y2="15.24" width="0" layer="49"/>
+<wire x1="19.939" y1="15.24" x2="19.939" y2="12.7" width="0" layer="49"/>
+<wire x1="19.939" y1="12.7" x2="19.939" y2="10.16" width="0" layer="49"/>
+<wire x1="19.939" y1="10.16" x2="19.939" y2="7.62" width="0" layer="49"/>
+<wire x1="19.939" y1="7.62" x2="19.939" y2="5.08" width="0" layer="49"/>
+<wire x1="19.939" y1="5.08" x2="19.939" y2="2.54" width="0" layer="49"/>
+<wire x1="19.939" y1="2.54" x2="19.939" y2="-0.127" width="0" layer="49"/>
+<wire x1="0.381" y1="2.54" x2="19.939" y2="2.54" width="0" layer="49"/>
+<wire x1="0.381" y1="5.08" x2="19.939" y2="5.08" width="0" layer="49"/>
+<wire x1="19.939" y1="7.62" x2="0.381" y2="7.62" width="0" layer="49"/>
+<wire x1="0.381" y1="10.16" x2="19.939" y2="10.16" width="0" layer="49"/>
+<wire x1="19.939" y1="12.7" x2="0.381" y2="12.7" width="0" layer="49"/>
+<wire x1="0.381" y1="12.7" x2="0.381" y2="15.24" width="0" layer="49"/>
+<wire x1="0.381" y1="15.24" x2="0.381" y2="17.78" width="0" layer="49"/>
+<wire x1="0.381" y1="17.78" x2="19.939" y2="17.78" width="0" layer="49"/>
+<wire x1="19.939" y1="15.24" x2="0.381" y2="15.24" width="0" layer="49"/>
+<wire x1="0.381" y1="20.32" x2="19.939" y2="20.32" width="0" layer="49"/>
+<wire x1="19.939" y1="22.86" x2="0.381" y2="22.86" width="0" layer="49"/>
+<wire x1="0.381" y1="25.4" x2="19.939" y2="25.4" width="0" layer="49"/>
+<wire x1="19.939" y1="27.94" x2="0.381" y2="27.94" width="0" layer="49"/>
+<wire x1="0.381" y1="30.48" x2="19.939" y2="30.48" width="0" layer="49"/>
+<wire x1="19.939" y1="33.02" x2="0.381" y2="33.02" width="0" layer="49"/>
+<wire x1="0.381" y1="35.56" x2="19.939" y2="35.56" width="0" layer="49"/>
+<wire x1="19.939" y1="38.1" x2="0.381" y2="38.1" width="0" layer="49"/>
+<wire x1="0.381" y1="40.64" x2="19.939" y2="40.64" width="0" layer="49"/>
+<wire x1="19.939" y1="43.18" x2="0.381" y2="43.18" width="0" layer="49"/>
+<wire x1="0.381" y1="45.72" x2="19.939" y2="45.72" width="0" layer="49"/>
+<wire x1="19.939" y1="48.26" x2="0.381" y2="48.26" width="0" layer="49"/>
+<wire x1="3.8608" y1="30.6832" x2="16.3322" y2="30.6832" width="0" layer="49"/>
 <polygon width="0" layer="21">
 <vertex x="11.97343125" y="16.446225"/>
 <vertex x="11.065578125" y="16.26574375"/>
@@ -192,39 +283,8 @@
 <vertex x="8.950325" y="17.693984375"/>
 <vertex x="10.1981875" y="16.871090625"/>
 </polygon>
-<text x="27.94" y="49.53" size="1.016" layer="51" font="vector" align="top-left">NOTES:
-
-Layer stack up:
- 1 - GTL  - Top Signal, GND
- 2 - G2L  - Inner Signal, GND, +3V8
-15 - G15L - Inner Signal, GND, +3V3
-16 - GBL  - Bottom Signal, GND</text>
-<wire x1="26.6192" y1="38.1254" x2="26.6192" y2="50.8254" width="0.127" layer="51"/>
-<wire x1="26.6192" y1="50.8254" x2="59.3852" y2="50.8254" width="0.127" layer="51"/>
-<wire x1="59.3852" y1="50.8254" x2="59.3852" y2="38.1254" width="0.127" layer="51"/>
-<wire x1="59.3852" y1="38.1254" x2="26.6192" y2="38.1254" width="0.127" layer="51"/>
 <text x="4.191" y="30.988" size="0.6096" layer="21" font="vector" ratio="15">SETUP</text>
 <text x="13.462" y="30.988" size="0.6096" layer="21" font="vector" ratio="15">RESET</text>
-<text x="0.1778" y="50.4952" size="0.8128" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">012</text>
-<text x="27.94" y="11.43" size="1.016" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. PARTICLE INDUSTRIES, INC 
-("PARTICLE") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
-PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
-IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-OR NON-INFRINGEMENT.
-
-Particle may make changes to specifications and product descriptions at any 
-time, without notice. The Customer must not rely on the absence or 
-characteristics of any features or instructions marked "reserved" or 
-"undefined." Particle reserves these for future definition and shall have 
-no responsibility whatsoever for conflicts or incompatibilities arising 
-from future changes to them. The product information on the Web Site or 
-Materials is subject to change without notice. Do not finalize a design 
-with this information. 
-Particle is a registered trademark.</text>
-<wire x1="26.67" y1="10.16" x2="104.14" y2="10.16" width="0.127" layer="51"/>
-<wire x1="104.14" y1="10.16" x2="104.14" y2="35.56" width="0.127" layer="51"/>
-<wire x1="104.14" y1="35.56" x2="26.67" y2="35.56" width="0.127" layer="51"/>
-<wire x1="26.67" y1="35.56" x2="26.67" y2="10.16" width="0.127" layer="51"/>
 <text x="19.558" y="2.54" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">C0</text>
 <text x="0.889" y="2.54" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">B0</text>
 <text x="13.6652" y="44.2976" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="top-left">D+</text>
@@ -269,7 +329,8 @@ Particle is a registered trademark.</text>
 <text x="19.304" y="43.18" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">RST</text>
 <text x="19.304" y="45.72" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">3V3</text>
 <text x="19.558" y="48.26" size="0.6096" layer="21" font="vector" ratio="13" rot="SR0" align="center">5V</text>
-<wire x1="2.794" y1="8.763" x2="5.588" y2="8.763" width="0.3048" layer="22"/>
+<text x="1.27" y="48.26" size="0.508" layer="21" font="vector" ratio="13" rot="SR0" align="center">LiPo+</text>
+<text x="10.16" y="0.635" size="0.6096" layer="21" font="vector" ratio="15" align="center">v012</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -1650,16 +1711,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-0.3302" y1="1.9352" x2="0.3302" y2="1.9352" width="0.127" layer="21"/>
 <wire x1="-0.3302" y1="-1.9352" x2="0.3302" y2="-1.9352" width="0.127" layer="21"/>
 </package>
-<package name="1X01">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<package name="1X01_NO_SILK">
 <pad name="1" x="0" y="0" drill="0.889" diameter="1.4732"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
@@ -1971,7 +2023,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="R19" library="Spark" package="R0402_B" value="10K" x="8.763" y="40.259" locked="yes" rot="MR270"/>
 <element name="C7" library="Spark" package="C0402_B" value="47nF" x="7.747" y="48.514" locked="yes" rot="MR90"/>
 <element name="C40" library="Bretts-Spark-Library" package="C0603_B" value="10uF" x="3.5536" y="43.8212" locked="yes" rot="R180"/>
-<element name="C41" library="Bretts-Spark-Library" package="C0603_B" value="10uF" x="6.3448" y="40.5178" locked="yes"/>
+<element name="C41" library="Bretts-Spark-Library" package="C0603_B" value="10uF" x="5.7102" y="40.5332" locked="yes" rot="R90"/>
 <element name="C4" library="Bretts-Spark-Library" package="C0603_B" value="1uF" x="12.9032" y="48.895" locked="yes" rot="MR90"/>
 <element name="C5" library="Bretts-Spark-Library" package="C0603_B" value="20uF" x="10.287" y="48.895" locked="yes" rot="MR90"/>
 <element name="C23" library="Bretts-Spark-Library" package="C0603_B" value="10uF" x="5.207" y="44.323" locked="yes" rot="MR0"/>
@@ -1986,10 +2038,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="R21" library="Spark" package="R0402_B" value="4K7" x="16.637" y="44.323" locked="yes"/>
 <element name="U$7" library="Particle" package="M02_0.05_HEADER" value="M02_0.05_HEADER" x="14.605" y="44.958" locked="yes"/>
 <element name="C39" library="Spark" package="C0402_B" value="1uF" x="12.954" y="40.259" locked="yes" rot="R90"/>
-<element name="JP3" library="Particle" package="1X01" value="" x="19.05" y="49.53" locked="yes" rot="MR0"/>
 <element name="JP2" library="Particle" package="1X18-D-PADS" value="M18DPAD" x="19.05" y="25.4" locked="yes" rot="MR90"/>
 <element name="U$5" library="Particle" package="S-PWSON-N6" value="TPS62291DRV" x="3.81" y="41.402" locked="yes"/>
-<element name="U$6" library="Particle" package="INDUCTOR-NR3015" value="2.2uH - NR3015T2R2M" x="5.2048" y="37.8524" locked="yes"/>
+<element name="U$6" library="Particle" package="INDUCTOR-NR3015" value="2.2uH - NR3015T2R2M" x="5.2048" y="37.5984" locked="yes"/>
+<element name="JP5" library="Particle" package="1X01_NO_SILK" value="" x="1.27" y="49.53" locked="yes"/>
+<element name="JP3" library="Particle" package="1X01_NO_SILK" value="" x="19.05" y="49.53" locked="yes"/>
 </elements>
 <signals>
 <signal name="USB_DM">
@@ -2167,18 +2220,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="U$6" pad="2"/>
 <polygon width="0.1524" layer="1" thermals="no" rank="2">
 <vertex x="4.318" y="40.64"/>
-<vertex x="4.826" y="40.64"/>
-<vertex x="5.207" y="41.021"/>
-<vertex x="5.969" y="41.021"/>
-<vertex x="6.096" y="40.894"/>
-<vertex x="6.096" y="40.005"/>
+<vertex x="6.2992" y="40.64"/>
+<vertex x="6.2992" y="39.8018"/>
 <vertex x="6.731" y="39.37"/>
 <vertex x="7.493" y="39.37"/>
 <vertex x="7.747" y="39.116"/>
-<vertex x="7.747" y="36.83"/>
-<vertex x="7.366" y="36.449"/>
-<vertex x="5.461" y="36.449"/>
-<vertex x="5.207" y="36.703"/>
+<vertex x="7.747" y="36.576"/>
+<vertex x="7.366" y="36.195"/>
+<vertex x="5.461" y="36.195"/>
+<vertex x="5.207" y="36.449"/>
 <vertex x="5.207" y="39.624"/>
 <vertex x="4.953" y="39.878"/>
 <vertex x="4.572" y="39.878"/>
@@ -2650,7 +2700,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <via x="12.573" y="3.937" extent="1-16" drill="0.3"/>
 <via x="11.43" y="3.937" extent="1-16" drill="0.3"/>
 <via x="16.891" y="3.937" extent="1-16" drill="0.3"/>
-<via x="18.669" y="2.54" extent="1-16" drill="0.3"/>
+<via x="18.3642" y="2.54" extent="1-16" drill="0.3"/>
 <via x="18.669" y="0.762" extent="1-16" drill="0.3"/>
 <via x="15.494" y="3.937" extent="1-16" drill="0.3"/>
 <via x="1.905" y="10.16" extent="1-16" drill="0.3"/>
@@ -2697,7 +2747,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <via x="1.778" y="25.4" extent="1-16" drill="0.3"/>
 <via x="12.573" y="13.97" extent="1-16" drill="0.3"/>
 <via x="15.621" y="13.208" extent="1-16" drill="0.3"/>
-<via x="18.669" y="1.778" extent="1-16" drill="0.3"/>
+<via x="19.177" y="1.778" extent="1-16" drill="0.3"/>
 <via x="2.032" y="1.651" extent="1-16" drill="0.3"/>
 <contactref element="U$1" pad="PAD@4"/>
 <contactref element="U$1" pad="PAD@6"/>
@@ -3987,6 +4037,25 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.91" y1="45.917" x2="10.91" y2="46.875" width="0.254" layer="16"/>
 <wire x1="10.91" y1="46.875" x2="10.287" y2="47.498" width="0.254" layer="16"/>
 <wire x1="10.287" y1="47.498" x2="10.287" y2="48.1457" width="0.254" layer="16"/>
+<contactref element="JP3" pad="1"/>
+<polygon width="0.1016" layer="16" thermals="no">
+<vertex x="11.176" y="45.466"/>
+<vertex x="10.668" y="45.466"/>
+<vertex x="10.668" y="46.736"/>
+<vertex x="9.779" y="47.625"/>
+<vertex x="9.779" y="48.514"/>
+<vertex x="11.43" y="48.514"/>
+<vertex x="11.684" y="48.26"/>
+<vertex x="11.684" y="46.863"/>
+<vertex x="11.176" y="46.355"/>
+</polygon>
+<via x="11.303" y="47.498" extent="1-16" drill="0.3048"/>
+<via x="11.303" y="46.863" extent="1-16" drill="0.3048"/>
+<wire x1="11.303" y1="47.498" x2="11.303" y2="47.752" width="0.6096" layer="2"/>
+<wire x1="11.303" y1="47.752" x2="11.811" y2="48.26" width="0.6096" layer="2"/>
+<wire x1="11.811" y1="48.26" x2="17.78" y2="48.26" width="0.6096" layer="2"/>
+<wire x1="17.78" y1="48.26" x2="19.05" y2="49.53" width="0.6096" layer="2"/>
+<wire x1="11.303" y1="46.863" x2="11.303" y2="47.498" width="0.6096" layer="2"/>
 </signal>
 <signal name="TS">
 <contactref element="U$1" pad="11"/>
@@ -4071,6 +4140,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="5.08" y="42.672"/>
 </polygon>
 <wire x1="8.2804" y1="42.5196" x2="7.1374" y2="42.5196" width="0.2032" layer="1"/>
+<contactref element="JP5" pad="1"/>
+<polygon width="0.1016" layer="1" thermals="no">
+<vertex x="0.254" y="48.387"/>
+<vertex x="4.191" y="48.387"/>
+<vertex x="4.191" y="46.736"/>
+<vertex x="4.826" y="46.101"/>
+<vertex x="6.477" y="46.101"/>
+<vertex x="6.477" y="50.546"/>
+<vertex x="0.254" y="50.546"/>
+</polygon>
 </signal>
 <signal name="VBUS">
 <contactref element="X1" pad="VBUS"/>
@@ -4096,11 +4175,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="15.748" y="46.228"/>
 <vertex x="14.478" y="46.228"/>
 </polygon>
-<contactref element="JP3" pad="1"/>
 <wire x1="17.018" y1="45.974" x2="17.1704" y2="46.1264" width="0.6096" layer="1"/>
-<wire x1="17.1704" y1="46.1264" x2="17.1704" y2="47.1932" width="0.6096" layer="1"/>
-<wire x1="17.1704" y1="47.1932" x2="19.05" y2="49.0728" width="0.6096" layer="1"/>
-<wire x1="19.05" y1="49.0728" x2="19.05" y2="49.53" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="RED_LED_0603" pad="C"/>
@@ -4137,15 +4212,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <polygon width="0.1524" layer="1" thermals="no" rank="3">
 <vertex x="3.048" y="40.64"/>
 <vertex x="3.302" y="40.64"/>
-<vertex x="3.302" y="40.132"/>
 <vertex x="3.302" y="40.005"/>
 <vertex x="3.937" y="39.37"/>
 <vertex x="4.445" y="39.37"/>
 <vertex x="4.699" y="39.116"/>
-<vertex x="4.699" y="36.703"/>
-<vertex x="4.445" y="36.449"/>
-<vertex x="3.429" y="36.449"/>
-<vertex x="3.048" y="36.83"/>
+<vertex x="4.699" y="36.449"/>
+<vertex x="4.445" y="36.195"/>
+<vertex x="3.429" y="36.195"/>
+<vertex x="3.048" y="36.576"/>
 </polygon>
 </signal>
 <signal name="N$2">
@@ -4654,31 +4728,32 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="19,1,555a518f57655784"/>
 <approved hash="19,1,1e7c3a063b841ffe"/>
 <approved hash="19,1,1a4c3e363f241b5e"/>
-<approved hash="4,1,d871207e207ed871"/>
+<approved hash="5,1,5451157c86633a8b"/>
+<approved hash="3,16,6ef86e0a6e766e84"/>
 <approved hash="4,1,0ad5129a129a0ad5"/>
-<approved hash="4,1,278a2fe52fe5278a"/>
 <approved hash="4,1,3ebc073307333ebc"/>
-<approved hash="4,1,33233b4c3b4c3323"/>
-<approved hash="4,1,ccd8d497d497ccd8"/>
-<approved hash="4,1,83428b2d8b2d8342"/>
-<approved hash="4,1,c0bfc930c930c0bf"/>
-<approved hash="4,1,8edb969496948edb"/>
-<approved hash="4,1,e98df1e2f1e2e98d"/>
 <approved hash="4,1,f526fd49fd49f526"/>
-<approved hash="4,1,9a74e27be27b9a74"/>
+<approved hash="4,1,e98df1e2f1e2e98d"/>
+<approved hash="4,1,278a2fe52fe5278a"/>
+<approved hash="4,1,c0bfc930c930c0bf"/>
+<approved hash="4,1,d871207e207ed871"/>
+<approved hash="4,1,ccd8d497d497ccd8"/>
 <approved hash="4,1,166e1e011e01166e"/>
+<approved hash="4,1,65876de86de86587"/>
+<approved hash="4,1,83428b2d8b2d8342"/>
+<approved hash="4,1,33233b4c3b4c3323"/>
 <approved hash="4,1,b729bf46bf46b729"/>
-<approved hash="4,1,7cb9453645367cb9"/>
+<approved hash="4,1,8edb969496948edb"/>
 <approved hash="4,1,48d2509d509d48d2"/>
 <approved hash="4,1,7120794f794f7120"/>
-<approved hash="4,1,65876de86de86587"/>
+<approved hash="4,1,9a74e27be27b9a74"/>
+<approved hash="4,1,7cb9453645367cb9"/>
 <approved hash="5,1,23cd14376add5d99"/>
-<approved hash="5,1,869acdea7eb90577"/>
 <approved hash="5,1,a20498ece6b4d232"/>
-<approved hash="5,1,5451157c86633a8b"/>
+<approved hash="5,1,869acdea7eb90577"/>
 <approved hash="5,1,14e694908b1a379f"/>
-<approved hash="5,1,73ec0d0bfdc5d228"/>
 <approved hash="5,1,66d013f26df562b8"/>
+<approved hash="5,1,73ec0d0bfdc5d228"/>
 <approved hash="4,1,57311d9ae385abc6"/>
 <approved hash="5,1,7e7919b5b26662db"/>
 <approved hash="5,1,c25a40e98d40da8d"/>
@@ -4686,24 +4761,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="5,1,b354f3e58d40a683"/>
 <approved hash="5,1,cd766cb5ee6662d3"/>
 <approved hash="4,1,b835f6760a6946c2"/>
-<approved hash="4,1,c2b795079501c2b1"/>
-<approved hash="4,1,04ba530a530c04bc"/>
-<approved hash="4,1,80b0d700d70680b6"/>
-<approved hash="4,1,1013a7e3a7e51015"/>
-<approved hash="4,1,fb41bcd1bcd7fb47"/>
-<approved hash="4,1,b4dbc2abc2adb4dd"/>
-<approved hash="4,1,de0c999c999ade0a"/>
-<approved hash="4,1,b942fed2fed4b944"/>
-<approved hash="4,1,ade5ea75ea73ade3"/>
-<approved hash="4,1,efe8a878a87eefee"/>
 <approved hash="4,1,521665e665e05210"/>
-<approved hash="4,1,4b200cb00cb64b26"/>
-<approved hash="4,1,f6de80ae80a8f6d8"/>
 <approved hash="4,1,7f4b38db38dd7f4d"/>
 <approved hash="4,1,46b91109110f46bf"/>
-<approved hash="4,1,08dd4ead4eab08db"/>
-<approved hash="4,1,3d447ad47ad23d42"/>
+<approved hash="4,1,4b200cb00cb64b26"/>
 <approved hash="4,1,21ef767f767921e9"/>
+<approved hash="4,1,3d447ad47ad23d42"/>
+<approved hash="4,1,c2b795079501c2b1"/>
+<approved hash="4,1,ade5ea75ea73ade3"/>
+<approved hash="4,1,b4dbc2abc2adb4dd"/>
+<approved hash="4,1,80b0d700d70680b6"/>
+<approved hash="4,1,b942fed2fed4b944"/>
+<approved hash="4,1,de0c999c999ade0a"/>
+<approved hash="4,1,08dd4ead4eab08db"/>
+<approved hash="4,1,f6de80ae80a8f6d8"/>
+<approved hash="4,1,1013a7e3a7e51015"/>
+<approved hash="4,1,04ba530a530c04bc"/>
+<approved hash="4,1,efe8a878a87eefee"/>
+<approved hash="4,1,fb41bcd1bcd7fb47"/>
 <approved hash="5,2,14e694908b1a379f"/>
 <approved hash="5,15,14e694908b1a379f"/>
 <approved hash="4,16,d871207e207ed871"/>
@@ -4724,39 +4799,39 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="4,16,3ebc073307333ebc"/>
 <approved hash="4,16,166e1e011e01166e"/>
 <approved hash="4,16,0ad5129a129a0ad5"/>
-<approved hash="19,16,dcdc34263325dbdf"/>
-<approved hash="19,16,8d8bb5012dbca148"/>
 <approved hash="19,16,de1c36e639e8d112"/>
 <approved hash="19,16,1ea36882b6f415aa"/>
+<approved hash="19,16,8d8bb5012dbca148"/>
+<approved hash="19,16,dcdc34263325dbdf"/>
 <approved hash="5,16,d1f80d936900755a"/>
 <approved hash="19,16,d9c2e638d8e8e712"/>
-<approved hash="19,16,a1d4d222687a1af6"/>
 <approved hash="19,16,532ee4d4da226dd8"/>
+<approved hash="19,16,a1d4d222687a1af6"/>
 <approved hash="19,16,d9dd262718f0e70a"/>
 <approved hash="5,16,8d7eb7a3cc2e8775"/>
 <approved hash="5,16,5e9eb97a0691a826"/>
 <approved hash="5,16,14e694908b1a379f"/>
-<approved hash="5,16,e5bd8d1e71621ba9"/>
 <approved hash="5,16,e60c8fe973fd1838"/>
+<approved hash="5,16,e5bd8d1e71621ba9"/>
 <approved hash="4,16,97137e87240a15d1"/>
-<approved hash="4,16,3d447ad47ad23d42"/>
+<approved hash="4,16,b942fed2fed4b944"/>
+<approved hash="4,16,80b0d700d70680b6"/>
 <approved hash="4,16,21ef767f767921e9"/>
-<approved hash="4,16,521665e665e05210"/>
-<approved hash="4,16,46b91109110f46bf"/>
-<approved hash="4,16,7f4b38db38dd7f4d"/>
-<approved hash="4,16,4b200cb00cb64b26"/>
-<approved hash="4,16,08dd4ead4eab08db"/>
-<approved hash="4,16,04ba530a530c04bc"/>
 <approved hash="4,16,ade5ea75ea73ade3"/>
 <approved hash="4,16,b4dbc2abc2adb4dd"/>
-<approved hash="4,16,80b0d700d70680b6"/>
-<approved hash="4,16,b942fed2fed4b944"/>
-<approved hash="4,16,f6de80ae80a8f6d8"/>
-<approved hash="4,16,fb41bcd1bcd7fb47"/>
-<approved hash="4,16,efe8a878a87eefee"/>
-<approved hash="4,16,c2b795079501c2b1"/>
 <approved hash="4,16,de0c999c999ade0a"/>
+<approved hash="4,16,521665e665e05210"/>
 <approved hash="4,16,1013a7e3a7e51015"/>
+<approved hash="4,16,08dd4ead4eab08db"/>
+<approved hash="4,16,3d447ad47ad23d42"/>
+<approved hash="4,16,04ba530a530c04bc"/>
+<approved hash="4,16,efe8a878a87eefee"/>
+<approved hash="4,16,fb41bcd1bcd7fb47"/>
+<approved hash="4,16,c2b795079501c2b1"/>
+<approved hash="4,16,7f4b38db38dd7f4d"/>
+<approved hash="4,16,46b91109110f46bf"/>
+<approved hash="4,16,f6de80ae80a8f6d8"/>
+<approved hash="4,16,4b200cb00cb64b26"/>
 </errors>
 </board>
 </drawing>
