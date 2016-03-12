@@ -38,7 +38,7 @@ A detailed description of the pin mapping can be found in **electron-pinmap_v1**
 Please review the pinmap spreadsheet to better understand the alternate functions of the GPIO pins.
 
 ### Eagle (schematic, pcb layout and drc):
-**eagle** contains the history of Electron designs and **electron_v010** and **electron_v012** are the latest designs based on different 3.3V regulator circuit viz. LM3281 and TPS62291 respectivily.
+**eagle** contains the history of Electron designs and **electron_v020** is the latest design.  The **libraries** folder contains the Eagle library for parts used on the Electron.
 
 #License
 
