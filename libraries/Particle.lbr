@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6650,6 +6650,22 @@ TDK: SPM4012 SPM4020</description>
 <wire x1="45.72" y1="3.81" x2="-2.54" y2="3.81" width="0.2032" layer="21"/>
 <wire x1="-2.54" y1="3.81" x2="-2.54" y2="24.13" width="0.2032" layer="21"/>
 </package>
+<package name="INDUCTOR-4040">
+<smd name="P$1" x="-1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
+<smd name="P$2" x="1.65" y="0" dx="2.3" dy="1.65" layer="1" rot="R90"/>
+<wire x1="-2.23" y1="-2.03" x2="-2.23" y2="2.03" width="0.127" layer="51"/>
+<wire x1="2.23" y1="-2.03" x2="2.23" y2="2.03" width="0.127" layer="51"/>
+<wire x1="-2.23" y1="2.03" x2="2.23" y2="2.03" width="0.127" layer="51"/>
+<wire x1="-2.23" y1="-2.03" x2="2.23" y2="-2.03" width="0.127" layer="51"/>
+<wire x1="-2.23" y1="1.47" x2="-2.23" y2="2.03" width="0.127" layer="21"/>
+<wire x1="-2.23" y1="2.03" x2="2.23" y2="2.03" width="0.127" layer="21"/>
+<wire x1="-2.23" y1="-2.03" x2="2.23" y2="-2.03" width="0.127" layer="21"/>
+<wire x1="2.23" y1="1.47" x2="2.23" y2="2.03" width="0.127" layer="21"/>
+<wire x1="-2.23" y1="-2.03" x2="-2.23" y2="-1.47" width="0.127" layer="21"/>
+<wire x1="2.23" y1="-2.03" x2="2.23" y2="-1.47" width="0.127" layer="21"/>
+<text x="-2.3" y="2.3" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.2" y="-3.2" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="UCC28700">
@@ -11632,7 +11648,7 @@ SMD toroidal-core transformer with 3 windings</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="INDUCTOR">
+<deviceset name="INDUCTOR" prefix="I">
 <gates>
 <gate name="G$1" symbol="INDUCTOR-1" x="0" y="0"/>
 </gates>
@@ -11716,6 +11732,16 @@ SMD toroidal-core transformer with 3 windings</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="I" package="INDUCTOR-4040">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="MPI4040R2-2R2-R"/>
 </technologies>
 </device>
 </devices>
