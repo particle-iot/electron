@@ -40,7 +40,7 @@ Please review the pinmap spreadsheet to better understand the alternate function
 ### Eagle (schematic, pcb layout and drc):
 **eagle** contains the history of Electron designs and **electron_v020** is the latest design.  The **libraries** folder contains the Eagle library for parts used on the Electron.
 
-#License
+### License
 
 Designed by Particle. Distributed under a Creative Commons Attribution, Share-Alike license.
 Development kits based on this product should be distributed under a similar license.
