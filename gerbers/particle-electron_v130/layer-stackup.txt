@@ -1,0 +1,28 @@
+# LAYER NAMES:
+
+ 1   - GTL  - Top Signal, GND
+ 2   - G2L  - GND
+ 3   - G3L  - Inner Signal, GND, +3V8
+ 4   - G4L  - Inner Signal, GND, +3V3
+ 15  - G15L - GND
+ 16  - GBL  - Bottom Signal, GND
+
+---
+
+# LAYER STACKUP:
+
+LAYER1 - 1/3oz plating (25um-35um)
+====== - PP7628 7.3mil
+LAYER2 - 1oz
+====== - CORE 0.5mm
+LAYER3 - 1oz
+====== - PP7628 7.1mil
+LAYER4 - 1/3oz plating (25um-35um)
+====== - CORE 0.5mm
+LAYER5 - 1oz 
+====== - PP7628 7.1mil
+LAYER6 - 1/3oz plating (25um-35um)
+
+TOTAL THICKNESS = 1.60 +/- 0.16mm
+
+---
